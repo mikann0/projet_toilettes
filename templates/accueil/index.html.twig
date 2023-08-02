@@ -1,48 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AccueilController!{% endblock %}
+{% block title %}Hello AccueilController!
+{% endblock %}
 
 {% block body %}
 
-<div class="example-wrapper">
-     <div class="filtrer-recherche">
-        <iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
-        <input type="text" id="recherche">
+	<div class="example-wrapper">
+		<div class="filtrer-recherche">
+        <form action="{{ path('app_accueil') }}" method="GET">
+			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
+			<input type="number" name="searchValue" value="{{ searchValue }}" placeholder="codepostal" id="recherche">
+            </form>
 
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;" id="sidebar">
-            <button onclick="closeSidebar()" class="w3-bar-item w3-large"> <iconify-icon icon="charm:cross"></iconify-icon></button>
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-          </div>
+			<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;" id="sidebar">
+				<button onclick="closeSidebar()" class="w3-bar-item w3-large">
+					<iconify-icon icon="charm:cross"></iconify-icon>
+				</button>
+				<a href="#" class="w3-bar-item w3-button">Link 1</a>
+				<a href="#" class="w3-bar-item w3-button">Link 2</a>
+				<a href="#" class="w3-bar-item w3-button">Link 3</a>
+			</div>
 
-        <div class="identify">
-            <iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
-        </div>
-    </div>
-    <div class="filtrer-note"></div>
-    <div class="list">
-        <div class="nom">
-            <p>Colbert</p>
-        </div>
-        <div class="nom">
-            <p>Sutter</p>
-        </div>
-        <div class="nom">
-            <p>Pêcherie</p>
-        </div>
-        <div class="nom">
-            <p>St Vincent</p>
-        </div>
-        <div class="nom">
-            <p>Château</p>
-        </div>
-        <div class="nom">
-            <p>Popy</p>
-        </div>
-        <div class="nom">
-            <p>Auqaqneur 1</p>
-        </div>
-        <div class="gra"></div>
-</div>
+			<div class="identify">
+				<iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
+			</div>
+		</div>
+		<div class="filtrer-note"></div>
+		<div class="list">
+			{% for toilette in toilettes %}
+				<div class="nom">
+					<p>{{toilette.nom}}</p>
+				</div>
+			{% endfor %}
+		</div>
+		{# <div class="gra"></div>  #}
+	</div>
 {% endblock %}
