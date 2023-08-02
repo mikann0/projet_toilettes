@@ -9,7 +9,7 @@
 		<div class="filtrer-recherche">
         <form action="{{ path('app_accueil') }}" method="GET">
 			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
-			<input type="number" name="searchValue" value="{{ searchValue }}" placeholder="codepostal" id="recherche">
+			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
             </form>
 
 			<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;" id="sidebar">
