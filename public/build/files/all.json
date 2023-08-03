@@ -1,0 +1,4293 @@
+{
+    "fields": [
+        "uid",
+        "nom",
+        "num",
+        "adresse",
+        "codepost",
+        "commune",
+        "code_insee",
+        "acceshan",
+        "payant",
+        "infoloc",
+        "gestequip",
+        "gestnet",
+        "openinghoursspecification",
+        "commentaire",
+        "gid",
+        "lon",
+        "lat"
+    ],
+    "layer_name": "lyon.toilettepublique_latest",
+    "nb_results": 141,
+    "table_alias": null,
+    "table_href": "https://data.grandlyon.com/fr/datapusher/ws/grandlyon/lyon.toilettepublique_latest.json",
+    "values": [
+        {
+            "acceshan": "",
+            "adresse": "20, place des Terreaux",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 4,
+            "infoloc": "dans cour int\u00e9rieure",
+            "lat": 45.76715356701375,
+            "lon": 4.833732001902589,
+            "nom": "Palais St Pierre",
+            "num": "11",
+            "openinghoursspecification": [
+                {
+                    "closes": "18:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday"
+                    ],
+                    "opens": "10:00"
+                },
+                {
+                    "closes": "18:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Friday"
+                    ],
+                    "opens": "10:30"
+                },
+                {
+                    "closes": "18:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "10:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-011"
+        },
+        {
+            "acceshan": "",
+            "adresse": "18, quai Saint Vincent",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 5,
+            "infoloc": "",
+            "lat": 45.76826086577879,
+            "lon": 4.820483558302778,
+            "nom": "St Vincent",
+            "num": "12",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-012"
+        },
+        {
+            "acceshan": "",
+            "adresse": "parc Sutter",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 6,
+            "infoloc": "dans jardin",
+            "lat": 45.77293337857817,
+            "lon": 4.82675161382608,
+            "nom": "Sutter",
+            "num": "13",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-013"
+        },
+        {
+            "acceshan": "",
+            "adresse": "9, place Colbert",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 7,
+            "infoloc": "",
+            "lat": 45.77209609919482,
+            "lon": 4.8346836365747325,
+            "nom": "Colbert",
+            "num": "14",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-014"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Gabriel Rambaud",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 8,
+            "infoloc": "",
+            "lat": 45.76806983494514,
+            "lon": 4.829270218457341,
+            "nom": "Rambaud",
+            "num": "19",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-019"
+        },
+        {
+            "acceshan": "",
+            "adresse": "12, quai de la P\u00eacherie",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 9,
+            "infoloc": "",
+            "lat": 45.76529819127691,
+            "lon": 4.831592592672858,
+            "nom": "P\u00eacherie",
+            "num": "110",
+            "openinghoursspecification": [
+                {
+                    "closes": "00:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-110"
+        },
+        {
+            "acceshan": "",
+            "adresse": "49, cours G\u00e9n\u00e9ral Giraud",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 10,
+            "infoloc": "",
+            "lat": 45.769677745241296,
+            "lon": 4.823902712551517,
+            "nom": "Giraud 2",
+            "num": "111",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69381-111"
+        },
+        {
+            "acceshan": "",
+            "adresse": "26, cours Bayard",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 11,
+            "infoloc": "en face",
+            "lat": 45.742743415929624,
+            "lon": 4.823581195537583,
+            "nom": "Bayard",
+            "num": "21",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-021"
+        },
+        {
+            "acceshan": "",
+            "adresse": "place de la capitainerie",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 12,
+            "infoloc": "",
+            "lat": 45.74291600779302,
+            "lon": 4.815008557861775,
+            "nom": "Confluence",
+            "num": "22",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-022"
+        },
+        {
+            "acceshan": "",
+            "adresse": "39, rue Smith",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 13,
+            "infoloc": "en face",
+            "lat": 45.744250296449366,
+            "lon": 4.823849075121857,
+            "nom": "Hippodrome",
+            "num": "23",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-023"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Carnot",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 14,
+            "infoloc": "ouest",
+            "lat": 45.75187003244778,
+            "lon": 4.827854380865964,
+            "nom": "Carnot",
+            "num": "27",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-027"
+        },
+        {
+            "acceshan": "",
+            "adresse": "7, rue d'Auvergne",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 15,
+            "infoloc": "en face",
+            "lat": 45.75418122556189,
+            "lon": 4.829428865406829,
+            "nom": "Amp\u00e8re",
+            "num": "28",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-028"
+        },
+        {
+            "acceshan": "",
+            "adresse": "32, quai Saint Antoine",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 16,
+            "infoloc": "",
+            "lat": 45.761978327006105,
+            "lon": 4.831963643937542,
+            "nom": "St Antoine",
+            "num": "29",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-029"
+        },
+        {
+            "acceshan": "",
+            "adresse": "8, quai des C\u00e9lestins",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 17,
+            "infoloc": "en face",
+            "lat": 45.76025003063659,
+            "lon": 4.830889519026262,
+            "nom": "Celestins",
+            "num": "210",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-210"
+        },
+        {
+            "acceshan": "",
+            "adresse": "21, quai Tilsitt",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 18,
+            "infoloc": "en face",
+            "lat": 45.75588638805543,
+            "lon": 4.826440330967176,
+            "nom": "Tilsitt",
+            "num": "211",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-211"
+        },
+        {
+            "acceshan": "",
+            "adresse": "place Bellecour",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "sanitaire surveill\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 19,
+            "infoloc": "",
+            "lat": 45.75876979017849,
+            "lon": 4.831578162385562,
+            "nom": "Bellecour",
+            "num": "212",
+            "openinghoursspecification": [
+                {
+                    "closes": "19:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-212"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place de la R\u00e9publique",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "ferm\u00e9 le dimanche et f\u00e9ri\u00e9s - sanitaire surveill\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 20,
+            "infoloc": "",
+            "lat": 45.76110748978979,
+            "lon": 4.835313405857983,
+            "nom": "R\u00e9publique",
+            "num": "213",
+            "openinghoursspecification": [
+                {
+                    "closes": "19:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69382-213"
+        },
+        {
+            "acceshan": "",
+            "adresse": "86, rue Paul Bert",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 21,
+            "infoloc": "en face",
+            "lat": 45.756776994979965,
+            "lon": 4.851643595393911,
+            "nom": "Paul Bert",
+            "num": "32",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-032"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue Chambovet",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 22,
+            "infoloc": "dans parc",
+            "lat": 45.74859847552558,
+            "lon": 4.894870980209692,
+            "nom": "Chambovet",
+            "num": "33",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-033"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Esplanade Nelson Mandela",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "condamn\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 23,
+            "infoloc": "",
+            "lat": 45.75379134064523,
+            "lon": 4.862796666856304,
+            "nom": "Dauphin\u00e9",
+            "num": "34",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-034"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place d'Arsonval",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 24,
+            "infoloc": "",
+            "lat": 45.743480054563754,
+            "lon": 4.879430465410668,
+            "nom": "Arsonval",
+            "num": "35",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-035"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Pierre Renaudel",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "condamn\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 25,
+            "infoloc": "",
+            "lat": 45.75735201065712,
+            "lon": 4.857253370902946,
+            "nom": "Renaudel",
+            "num": "36",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-036"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place de la Reconnaissance",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 26,
+            "infoloc": "",
+            "lat": 45.75376975114796,
+            "lon": 4.8861831832920855,
+            "nom": "Reconnaissance",
+            "num": "37",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-037"
+        },
+        {
+            "acceshan": "",
+            "adresse": "20, rue de la Villette",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "d\u00e9di\u00e9 taxis",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 27,
+            "infoloc": "",
+            "lat": 45.762496689299155,
+            "lon": 4.861494752422408,
+            "nom": "Villette / Taxis",
+            "num": "38",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-038"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Djibra\u00ebl Bahadourian",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 28,
+            "infoloc": "",
+            "lat": 45.75697292728067,
+            "lon": 4.845302024980564,
+            "nom": "Bahadourian",
+            "num": "39",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-039"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue Professeur Rochaix",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 29,
+            "infoloc": "angle rue G.David",
+            "lat": 45.747678921223745,
+            "lon": 4.8777917163900915,
+            "nom": "Zenith",
+            "num": "310",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-310"
+        },
+        {
+            "acceshan": "",
+            "adresse": "avenue des acacias",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 30,
+            "infoloc": "dans parc",
+            "lat": 45.751673315422565,
+            "lon": 4.881825256517808,
+            "nom": "Bazin",
+            "num": "312",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-312"
+        },
+        {
+            "acceshan": "",
+            "adresse": "92, avenue Mar\u00e9chal de Saxe",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 31,
+            "infoloc": "",
+            "lat": 45.760038489281925,
+            "lon": 4.845476961394926,
+            "nom": "Saxe",
+            "num": "314",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-314"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place des Martyrs de la r\u00e9sistance",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 32,
+            "infoloc": "",
+            "lat": 45.7566456142538,
+            "lon": 4.853169018768562,
+            "nom": "Martyrs",
+            "num": "315",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-315"
+        },
+        {
+            "acceshan": "",
+            "adresse": "24, rue Gabillot",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 33,
+            "infoloc": "",
+            "lat": 45.757076707020765,
+            "lon": 4.864424951132815,
+            "nom": "Gabillot",
+            "num": "316",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-316"
+        },
+        {
+            "acceshan": "",
+            "adresse": "7, place Aristide Briand",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 34,
+            "infoloc": "en face",
+            "lat": 45.753509890342904,
+            "lon": 4.849836046301328,
+            "nom": "Aristide Briand",
+            "num": "317",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-317"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Bir-Hakeim ",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 35,
+            "infoloc": "cot\u00e9 F. Faure",
+            "lat": 45.75267687605431,
+            "lon": 4.855977498763736,
+            "nom": "Bir Hakeim",
+            "num": "318",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-318"
+        },
+        {
+            "acceshan": "",
+            "adresse": "19, quai Victor Augagneur",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 36,
+            "infoloc": "en face",
+            "lat": 45.758950437048874,
+            "lon": 4.841130703559867,
+            "nom": "Augagneur 1",
+            "num": "319",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-319"
+        },
+        {
+            "acceshan": "",
+            "adresse": "4, quai Victor Augagneur",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 37,
+            "infoloc": "en face",
+            "lat": 45.76166245446241,
+            "lon": 4.841431123537555,
+            "nom": "Augagneur 2",
+            "num": "320",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-320"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Guichard",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 38,
+            "infoloc": "",
+            "lat": 45.759165367843394,
+            "lon": 4.847328576636417,
+            "nom": "Guichard",
+            "num": "321",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-321"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place du Ch\u00e2teau",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 39,
+            "infoloc": "",
+            "lat": 45.74992739245322,
+            "lon": 4.887219424539254,
+            "nom": "Ch\u00e2teau",
+            "num": "322",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69383-322"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Camille Flammarion",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 40,
+            "infoloc": "",
+            "lat": 45.77897609363538,
+            "lon": 4.819996125428726,
+            "nom": "Flammarion",
+            "num": "41",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-041"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Commandant Arnaud",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 41,
+            "infoloc": "",
+            "lat": 45.7792620656254,
+            "lon": 4.835345784779593,
+            "nom": "Commandant Arnaud",
+            "num": "42",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-042"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Edouard Millaud",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 42,
+            "infoloc": "",
+            "lat": 45.7742309692631,
+            "lon": 4.823321155791618,
+            "nom": "Millaud",
+            "num": "43",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-043"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue Chazi\u00e8re",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 43,
+            "infoloc": "",
+            "lat": 45.77519506142681,
+            "lon": 4.816684321359552,
+            "nom": "Cerisaie",
+            "num": "45",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-045"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue Henri Gorjus",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 44,
+            "infoloc": "",
+            "lat": 45.77807639891376,
+            "lon": 4.823335876008849,
+            "nom": "Popy",
+            "num": "46",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-046"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue Chazi\u00e8re",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 45,
+            "infoloc": "",
+            "lat": 45.77826708381363,
+            "lon": 4.815635375129351,
+            "nom": "Chazi\u00e8re",
+            "num": "49",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-049"
+        },
+        {
+            "acceshan": "",
+            "adresse": "21, place de la Croix-Rousse",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 46,
+            "infoloc": "en face",
+            "lat": 45.77543539246337,
+            "lon": 4.832767512973527,
+            "nom": "Croix Rousse",
+            "num": "411",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-411"
+        },
+        {
+            "acceshan": "",
+            "adresse": "3, rue Aim\u00e9 Boussange",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 47,
+            "infoloc": "en face",
+            "lat": 45.77540013126495,
+            "lon": 4.834393772893952,
+            "nom": "Boussange",
+            "num": "412",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-412"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Boulevard de la Croix-Rousse",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 48,
+            "infoloc": "Parking",
+            "lat": 45.774638259847166,
+            "lon": 4.82772048511325,
+            "nom": "Mairie",
+            "num": "413",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69384-413"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Square Jean Tricou",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 49,
+            "infoloc": "",
+            "lat": 45.755370405252265,
+            "lon": 4.806950948973494,
+            "nom": "Tricou",
+            "num": "52",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-052"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place du Docteur Schweitzer",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 50,
+            "infoloc": "",
+            "lat": 45.75558135972979,
+            "lon": 4.786707267793896,
+            "nom": "Schweitzer",
+            "num": "53",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-053"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place C\u00e9sar Geoffray",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 51,
+            "infoloc": "",
+            "lat": 45.749563857738224,
+            "lon": 4.7844274981348445,
+            "nom": "C\u00e9sar Geoffray",
+            "num": "54",
+            "openinghoursspecification": [
+                {
+                    "closes": "13:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Wednesday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-054"
+        },
+        {
+            "acceshan": "",
+            "adresse": "43, rue du Cardinal Gerlier",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 52,
+            "infoloc": "en face",
+            "lat": 45.76252907362586,
+            "lon": 4.811780462613195,
+            "nom": "Cardinal Gerlier",
+            "num": "55",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-055"
+        },
+        {
+            "acceshan": "",
+            "adresse": "7, rue de la Garde",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 53,
+            "infoloc": "en face ex-poney club",
+            "lat": 45.75962966010425,
+            "lon": 4.79019930013143,
+            "nom": "La Garde",
+            "num": "56",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-056"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place B\u00e2tonnier Valansio",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 54,
+            "infoloc": "",
+            "lat": 45.7582231624144,
+            "lon": 4.825070287901038,
+            "nom": "Valensio",
+            "num": "57",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-057"
+        },
+        {
+            "acceshan": "",
+            "adresse": "14, rue Docteur Edmond Locard",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 55,
+            "infoloc": " Parc Mairie",
+            "lat": 45.75771445910409,
+            "lon": 4.801353234788838,
+            "nom": "Edmond Locard",
+            "num": "59",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-059"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place du P\u00e8re Fran\u00e7ois Varillon",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 56,
+            "infoloc": "",
+            "lat": 45.75727660338583,
+            "lon": 4.815599163891456,
+            "nom": "Varillon",
+            "num": "513",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-513"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place B\u00e9n\u00e9dict Tessier",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 57,
+            "infoloc": "",
+            "lat": 45.75592979915907,
+            "lon": 4.797875389106643,
+            "nom": "Teissier",
+            "num": "514",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-514"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Avenue Adolphe Max",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "sanitaire surveill\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL/Prestataire",
+            "gestnet": "Prestataire",
+            "gid": 58,
+            "infoloc": "",
+            "lat": 45.76039000389934,
+            "lon": 4.827548706361274,
+            "nom": "St Jean",
+            "num": "515",
+            "openinghoursspecification": [
+                {
+                    "closes": "19:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69385-515"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e des \u00e9bats",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 59,
+            "infoloc": "Pelouse des \u00e9bats",
+            "lat": 45.780005032349024,
+            "lon": 4.858057385637169,
+            "nom": "Ebats",
+            "num": "61",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-061"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e du chalet",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 60,
+            "infoloc": "Parking des bus",
+            "lat": 45.78061230205513,
+            "lon": 4.8565508989287665,
+            "nom": "Bus",
+            "num": "62",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-062"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e du chemin de fer",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 61,
+            "infoloc": "Chalet des gardes",
+            "lat": 45.778606625567406,
+            "lon": 4.8585524476853905,
+            "nom": "Gardes",
+            "num": "63",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-063"
+        },
+        {
+            "acceshan": "",
+            "adresse": "place g\u00e9n\u00e9ral Leclerc",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 62,
+            "infoloc": "Enfants du Rh\u00f4ne",
+            "lat": 45.77725219150431,
+            "lon": 4.851957167664029,
+            "nom": "Enfants du Rh\u00f4ne",
+            "num": "64",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-064"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e du chemin de fer",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 63,
+            "infoloc": "Porte de la vo\u00fbte",
+            "lat": 45.778606625567406,
+            "lon": 4.8585524476853905,
+            "nom": "Vo\u00fbte",
+            "num": "65",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-065"
+        },
+        {
+            "acceshan": "",
+            "adresse": "place g\u00e9n\u00e9ral Leclerc",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 64,
+            "infoloc": "Pelouse de la coupole",
+            "lat": 45.77725219150431,
+            "lon": 4.851957167664029,
+            "nom": "Coupole",
+            "num": "66",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-066"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e du parc aux daims",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 65,
+            "infoloc": "Parc aux daims",
+            "lat": 45.77544626520611,
+            "lon": 4.8531543753546496,
+            "nom": "Daims",
+            "num": "67",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-067"
+        },
+        {
+            "acceshan": "",
+            "adresse": "quai Charles de Gaulle",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 67,
+            "infoloc": "c\u00f4t\u00e9 Rh\u00f4ne",
+            "lat": 45.78546542890413,
+            "lon": 4.857539662326162,
+            "nom": "Cit\u00e9 internationale 1",
+            "num": "69",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-069"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e Achille Lignon",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 68,
+            "infoloc": "c\u00f4t\u00e9 Parc T\u00eate d'Or",
+            "lat": 45.77869409375925,
+            "lon": 4.852074056944784,
+            "nom": "Cit\u00e9 internationale 2",
+            "num": "610",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-610"
+        },
+        {
+            "acceshan": "",
+            "adresse": "2, avenue Verguin",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 69,
+            "infoloc": "en face",
+            "lat": 45.77236705555461,
+            "lon": 4.855176872647427,
+            "nom": "Verguin",
+            "num": "611",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-611"
+        },
+        {
+            "acceshan": "",
+            "adresse": "163, rue Duguesclin",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 70,
+            "infoloc": "en face",
+            "lat": 45.76431993402151,
+            "lon": 4.848338404150999,
+            "nom": "Louis Blanc",
+            "num": "612",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-612"
+        },
+        {
+            "acceshan": "",
+            "adresse": "36 rue F\u00e9lix Jacquier ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 71,
+            "infoloc": "angle rue Montgolfier",
+            "lat": 45.77193648299366,
+            "lon": 4.847409464401025,
+            "nom": "F\u00e9lix Jacquier",
+            "num": "613",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-613"
+        },
+        {
+            "acceshan": "",
+            "adresse": "130, rue Vend\u00f4me ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 72,
+            "infoloc": "en face angle rue Vauban",
+            "lat": 45.76496772025882,
+            "lon": 4.845606338213355,
+            "nom": "Vend\u00f4me",
+            "num": "614",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-614"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Square du Capitaine Billon",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 73,
+            "infoloc": "",
+            "lat": 45.77067209918033,
+            "lon": 4.85683385609476,
+            "nom": "Billon",
+            "num": "615",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-615"
+        },
+        {
+            "acceshan": "",
+            "adresse": "1, avenue de Grande-Bretagne",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 74,
+            "infoloc": "",
+            "lat": 45.77632562936667,
+            "lon": 4.843974564851896,
+            "nom": "Grande Bretagne",
+            "num": "616",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-616"
+        },
+        {
+            "acceshan": "",
+            "adresse": "271 cours Lafayette ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 75,
+            "infoloc": "angle rue d'Inkermann ",
+            "lat": 45.76386386702197,
+            "lon": 4.866222383759261,
+            "nom": "Inkermann",
+            "num": "617",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-617"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Puvis de Chavannes ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 76,
+            "infoloc": "c\u00f4t\u00e9 Est rue Vend\u00f4me",
+            "lat": 45.77186310774604,
+            "lon": 4.843756349475752,
+            "nom": "Puvis de Chavannes",
+            "num": "618",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-618"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Jacques Elmaleh ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 77,
+            "infoloc": "angle T\u00eate d'Or - Bugeaud",
+            "lat": 45.76712421533929,
+            "lon": 4.853238526636293,
+            "nom": "El Maleh",
+            "num": "619",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-619"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Mar\u00e9chal Lyautey",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 78,
+            "infoloc": "",
+            "lat": 45.76938795640914,
+            "lon": 4.84149776508465,
+            "nom": "Lyautey",
+            "num": "620",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-620"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Edgar Quinet ",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 79,
+            "infoloc": "face au n\u00b0 32, avenue de Saxe",
+            "lat": 45.76561545224388,
+            "lon": 4.8451227212123795,
+            "nom": "Quinet",
+            "num": "621",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-621"
+        },
+        {
+            "acceshan": "",
+            "adresse": "11, quai du G\u00e9n\u00e9ral Sarrail",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 80,
+            "infoloc": "en face",
+            "lat": 45.76554371604636,
+            "lon": 4.84176436996841,
+            "nom": "Sarrail",
+            "num": "622",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-622"
+        },
+        {
+            "acceshan": "",
+            "adresse": "13, rue Challemel Lacour",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "parc",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 81,
+            "infoloc": "en face",
+            "lat": 45.729861373383876,
+            "lon": 4.83206394237029,
+            "nom": "Ancel",
+            "num": "71",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-071"
+        },
+        {
+            "acceshan": "",
+            "adresse": "15 rue Batonnier Jacquier",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 82,
+            "infoloc": "angle Rue Domer",
+            "lat": 45.747287118337034,
+            "lon": 4.8503530842631575,
+            "nom": "B\u00e9guin",
+            "num": "72",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-072"
+        },
+        {
+            "acceshan": "",
+            "adresse": "3 all\u00e9e Pierre de Coubertin",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 83,
+            "infoloc": "vers locomotive",
+            "lat": 45.7260335782535,
+            "lon": 4.825035408324978,
+            "nom": "Gerland 1",
+            "num": "73",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-073"
+        },
+        {
+            "acceshan": "",
+            "adresse": "405 avenue Jean Jaur\u00e8s",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 84,
+            "infoloc": "vers LOU",
+            "lat": 45.72145334557293,
+            "lon": 4.8263795979704165,
+            "nom": "Gerland 2",
+            "num": "74",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-074"
+        },
+        {
+            "acceshan": "",
+            "adresse": "419 avenue Jean Jaur\u00e8s",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 85,
+            "infoloc": "vers abeilles",
+            "lat": 45.72018878622041,
+            "lon": 4.824760572839911,
+            "nom": "Gerland 3",
+            "num": "75",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-075"
+        },
+        {
+            "acceshan": "",
+            "adresse": "6 Place Jean Jaur\u00e8s ",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "toilette s\u00e8che  ",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 87,
+            "infoloc": "c\u00f4t\u00e9 rue de Gerland",
+            "lat": 45.740105772985586,
+            "lon": 4.840161559570461,
+            "nom": "Jean Jaur\u00e8s",
+            "num": "77",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-077"
+        },
+        {
+            "acceshan": "",
+            "adresse": "37 rue de l'\u00e9pargne",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 88,
+            "infoloc": "esplanade",
+            "lat": 45.74310539548293,
+            "lon": 4.856912812837974,
+            "nom": "Blandan 1",
+            "num": "78",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-078"
+        },
+        {
+            "acceshan": "",
+            "adresse": "2 ruelle du grand casernement",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 89,
+            "infoloc": "do\u00fbves",
+            "lat": 45.74612193152938,
+            "lon": 4.850987687666899,
+            "nom": "Blandan 2",
+            "num": "79",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-079"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place des Docteurs Charles et Christophe M\u00e9rieux ",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 90,
+            "infoloc": "",
+            "lat": 45.732506248335916,
+            "lon": 4.826099476546449,
+            "nom": "M\u00e9rieux",
+            "num": "710",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-710"
+        },
+        {
+            "acceshan": "",
+            "adresse": "51, rue Montesquieu",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 91,
+            "infoloc": "en face",
+            "lat": 45.75237504419762,
+            "lon": 4.843442491491884,
+            "nom": "Mazagran",
+            "num": "711",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-711"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Rue Saint J\u00e9r\u00f4me",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 92,
+            "infoloc": " face au n\u00b0 6",
+            "lat": 45.750146032715236,
+            "lon": 4.844302943137237,
+            "nom": "St J\u00e9r\u00f4me",
+            "num": "715",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-715"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Jean Mac\u00e9",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 93,
+            "infoloc": "",
+            "lat": 45.74624989882647,
+            "lon": 4.843282132653025,
+            "nom": "Jean Mac\u00e9",
+            "num": "716",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-716"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Saint Louis ",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 94,
+            "infoloc": "c\u00f4t\u00e9 Sud rue du B\u00e9guin",
+            "lat": 45.74950245425173,
+            "lon": 4.848149236986402,
+            "nom": "St Louis",
+            "num": "717",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-717"
+        },
+        {
+            "acceshan": "",
+            "adresse": "10 rue Saint Hippolyte",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": " ",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 95,
+            "infoloc": "MJC Lumi\u00e8re",
+            "lat": 45.746555414274084,
+            "lon": 4.863503560164756,
+            "nom": "St-Hippolyte",
+            "num": "81",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-081"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Andr\u00e9 Latarjet",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 96,
+            "infoloc": "",
+            "lat": 45.72987332020327,
+            "lon": 4.88501784300866,
+            "nom": "Latarget",
+            "num": "82",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-082"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Marc Sangnier",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 97,
+            "infoloc": "",
+            "lat": 45.73251366794913,
+            "lon": 4.882361142858771,
+            "nom": "Sangnier",
+            "num": "83",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-083"
+        },
+        {
+            "acceshan": "",
+            "adresse": "290 route de Vienne",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 98,
+            "infoloc": "",
+            "lat": 45.72486706692596,
+            "lon": 4.853784612698075,
+            "nom": "Clos Layat",
+            "num": "85",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "08:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-085"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Belleville ",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 99,
+            "infoloc": "",
+            "lat": 45.734583896694666,
+            "lon": 4.853543949726763,
+            "nom": "Belleville ",
+            "num": "86",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-086"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place du 11 novembre 1918",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 100,
+            "infoloc": "",
+            "lat": 45.73722018861535,
+            "lon": 4.868102647184641,
+            "nom": "11-nov-18",
+            "num": "87",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-087"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place G\u00e9n\u00e9ral Andr\u00e9 ",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 101,
+            "infoloc": "",
+            "lat": 45.72705218510925,
+            "lon": 4.877383030467442,
+            "nom": "G\u00e9n\u00e9ral Andr\u00e9",
+            "num": "88",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-088"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Ambroise Courtois",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 102,
+            "infoloc": "",
+            "lat": 45.74491924846047,
+            "lon": 4.871991109778688,
+            "nom": "Ambroise Courtois",
+            "num": "89",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69388-089"
+        },
+        {
+            "acceshan": "",
+            "adresse": "8, rue Docteur Horand",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 103,
+            "infoloc": "en face",
+            "lat": 45.772454487634064,
+            "lon": 4.801448534532885,
+            "nom": "Montel",
+            "num": "91",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-091"
+        },
+        {
+            "acceshan": "",
+            "adresse": "505 Rue de Beer-Sheva ",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 104,
+            "infoloc": "angle avenue de la Sauvegarde",
+            "lat": 45.78966051231089,
+            "lon": 4.791106564205683,
+            "nom": "Be'er Sheva",
+            "num": "92",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-092"
+        },
+        {
+            "acceshan": "",
+            "adresse": "40 Boulevard de Balmont",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 105,
+            "infoloc": "March\u00e9 de la Duch\u00e8re",
+            "lat": 45.788656312590525,
+            "lon": 4.801273598421507,
+            "nom": "Balmont",
+            "num": "93",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-093"
+        },
+        {
+            "acceshan": "",
+            "adresse": "1 pont de l'Ile Barbe",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 106,
+            "infoloc": "au Sud-Ouest sous le pont",
+            "lat": 45.797038707066534,
+            "lon": 4.831038365892704,
+            "nom": "Ile Barbe",
+            "num": "94",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-094"
+        },
+        {
+            "acceshan": "",
+            "adresse": "57, rue des Docteurs Cordier",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 107,
+            "infoloc": "en face",
+            "lat": 45.80192877573423,
+            "lon": 4.825977528043978,
+            "nom": "Cordier",
+            "num": "95",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-095"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue de la p\u00e9pini\u00e8re royale",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 108,
+            "infoloc": "Parking",
+            "lat": 45.7669763030891,
+            "lon": 4.804588934246508,
+            "nom": "Gorge de Loup",
+            "num": "96",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-096"
+        },
+        {
+            "acceshan": "",
+            "adresse": "153, avenue Barth\u00e9l\u00e9my Buyer ",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 109,
+            "infoloc": "en face sur la place",
+            "lat": 45.764752510852425,
+            "lon": 4.798389585295724,
+            "nom": "Buyer",
+            "num": "97",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-097"
+        },
+        {
+            "acceshan": "",
+            "adresse": "21, rue Antonin Laborde",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 110,
+            "infoloc": "en face",
+            "lat": 45.78676578367878,
+            "lon": 4.811005932522834,
+            "nom": "Saules",
+            "num": "98",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-098"
+        },
+        {
+            "acceshan": "",
+            "adresse": "pont Robert Schuman",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 111,
+            "infoloc": "en face",
+            "lat": 45.78031305684698,
+            "lon": 4.8097101893662035,
+            "nom": "Gare d'eau",
+            "num": "99",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-099"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Abb\u00e9 Pierre",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 112,
+            "infoloc": "",
+            "lat": 45.78619933977852,
+            "lon": 4.795908341403049,
+            "nom": "Abb\u00e9 Pierre",
+            "num": "910",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "05:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-910"
+        },
+        {
+            "acceshan": "",
+            "adresse": "10, Quai Arloing ",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 113,
+            "infoloc": "en face",
+            "lat": 45.77316273514357,
+            "lon": 4.809662882589484,
+            "nom": "Arloing",
+            "num": "918",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-918"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Alfred Vanderpol ",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 114,
+            "infoloc": "face 14, rue St Pierre de Vaise",
+            "lat": 45.773337810696695,
+            "lon": 4.808151983193015,
+            "nom": "Vanderpol",
+            "num": "919",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-919"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Ferber ",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 115,
+            "infoloc": "c\u00f4t\u00e9 rue Sergent Michel Berthet",
+            "lat": 45.773391078487826,
+            "lon": 4.804889356619635,
+            "nom": "Ferber",
+            "num": "920",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-920"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place de Paris",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 116,
+            "infoloc": "",
+            "lat": 45.779635768991646,
+            "lon": 4.80359052802943,
+            "nom": "Place de Paris",
+            "num": "921",
+            "openinghoursspecification": [
+                {
+                    "closes": "02:00",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:00"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69389-921"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Chardonnet",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "en travaux",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 172,
+            "infoloc": "",
+            "lat": 45.77069949637768,
+            "lon": 4.83443589401038,
+            "nom": "Chardonnet",
+            "num": "17",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69381-017"
+        },
+        {
+            "acceshan": "",
+            "adresse": "all\u00e9e du lac",
+            "code_insee": 69386,
+            "codepost": 69006,
+            "commentaire": "6h30 - 20h30 - toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 66,
+            "infoloc": "Roseraie",
+            "lat": 45.78132190003376,
+            "lon": 4.850640413164519,
+            "nom": "Roseraie",
+            "num": "68",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69386-068"
+        },
+        {
+            "acceshan": "",
+            "adresse": "2 place de Montr\u00e9al",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "Toilette s\u00e8che 6h30 - 20h30",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 86,
+            "infoloc": "vers lyc\u00e9e international",
+            "lat": 45.72827374985222,
+            "lon": 4.821917302105659,
+            "nom": "Gerland 4",
+            "num": "76",
+            "openinghoursspecification": [
+                {
+                    "closes": "22:30",
+                    "dayOfWeek": [
+                        "http://schema.org/Monday",
+                        "http://schema.org/Tuesday",
+                        "http://schema.org/Wednesday",
+                        "http://schema.org/Thursday",
+                        "http://schema.org/Friday",
+                        "http://schema.org/Saturday",
+                        "http://schema.org/Sunday"
+                    ],
+                    "opens": "06:30"
+                }
+            ],
+            "payant": "",
+            "uid": "TOI-69387-076"
+        },
+        {
+            "acceshan": "",
+            "adresse": "249 boulevard de la Duch\u00e8re",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 134,
+            "infoloc": "ouest",
+            "lat": 45.77712053749306,
+            "lon": 4.794829889681253,
+            "nom": "Vallon 3",
+            "num": "917",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-917"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Rue Joliot Curie",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 136,
+            "infoloc": "",
+            "lat": 45.755636083293616,
+            "lon": 4.789713641325675,
+            "nom": "Muri\u00e8res",
+            "num": "510",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69385-510"
+        },
+        {
+            "acceshan": "",
+            "adresse": "53, cours Eug\u00e9nie",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 173,
+            "infoloc": "en face",
+            "lat": 45.744340071238796,
+            "lon": 4.8880567760490505,
+            "nom": "Eug\u00e9nie",
+            "num": "311",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69383-311"
+        },
+        {
+            "acceshan": "",
+            "adresse": "68, rue Eug\u00e8ne Pons",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 138,
+            "infoloc": "en face",
+            "lat": 45.77965115432514,
+            "lon": 4.83992659137741,
+            "nom": "Eug\u00e8ne Pons",
+            "num": "48",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69384-048"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Rue de Champvert",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 140,
+            "infoloc": "",
+            "lat": 45.76236975009279,
+            "lon": 4.796020090031254,
+            "nom": "Champvert",
+            "num": "51",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69385-051"
+        },
+        {
+            "acceshan": "",
+            "adresse": "12, rue Dugas Montbel",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 145,
+            "infoloc": "",
+            "lat": 45.74873290771956,
+            "lon": 4.82272110624716,
+            "nom": "Montbel",
+            "num": "26",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69382-026"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Abb\u00e9 Larue",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 148,
+            "infoloc": " angle rue des Tourelles",
+            "lat": 45.755187410108135,
+            "lon": 4.820770337571233,
+            "nom": "Abb\u00e9 Larue",
+            "num": "511",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69385-511"
+        },
+        {
+            "acceshan": "",
+            "adresse": "27, avenue Sidoine Apollinaire",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 150,
+            "infoloc": "en face",
+            "lat": 45.772872227871815,
+            "lon": 4.796042185260595,
+            "nom": "Apollinaire",
+            "num": "911",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-911"
+        },
+        {
+            "acceshan": "",
+            "adresse": "259 boulevard de la Duch\u00e8re",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 155,
+            "infoloc": "cot\u00e9 ch\u00e2teau",
+            "lat": 45.77712053749306,
+            "lon": 4.794829889681253,
+            "nom": "Vallon 1",
+            "num": "915",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-915"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Petit Parc Serin",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 156,
+            "infoloc": "",
+            "lat": 45.77641181349935,
+            "lon": 4.81081038535611,
+            "nom": "Serin",
+            "num": "410",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69384-410"
+        },
+        {
+            "acceshan": "",
+            "adresse": "35, cours G\u00e9n\u00e9ral Giraud",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 157,
+            "infoloc": "",
+            "lat": 45.76936234556324,
+            "lon": 4.8206091804104085,
+            "nom": "Giraud 1",
+            "num": "15",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69381-015"
+        },
+        {
+            "acceshan": "",
+            "adresse": "3, place Tabareau",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 158,
+            "infoloc": "en face",
+            "lat": 45.77438568149525,
+            "lon": 4.826535673276227,
+            "nom": "Tabareau",
+            "num": "44",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69384-044"
+        },
+        {
+            "acceshan": "",
+            "adresse": "7, rue de la Garde",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 159,
+            "infoloc": "en face ex-poney club",
+            "lat": 45.75962966010425,
+            "lon": 4.79019930013143,
+            "nom": "La Garde",
+            "num": "512",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69385-512"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Rue Roger Radisson",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 160,
+            "infoloc": "",
+            "lat": 45.76017346851848,
+            "lon": 4.815813899655616,
+            "nom": "Radisson",
+            "num": "58",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69385-058"
+        },
+        {
+            "acceshan": "",
+            "adresse": "13, cours Suchet",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 161,
+            "infoloc": "",
+            "lat": 45.74725476331772,
+            "lon": 4.823427274255572,
+            "nom": "Suchet",
+            "num": "24",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69382-024"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place du 8 mai 1945",
+            "code_insee": 69388,
+            "codepost": 69008,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 162,
+            "infoloc": "",
+            "lat": 45.73058085497783,
+            "lon": 4.865382410847695,
+            "nom": "08-mai-45",
+            "num": "84",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69388-084"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Mont\u00e9e de l Amphith\u00e9\u00e2tre",
+            "code_insee": 69381,
+            "codepost": 69001,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 164,
+            "infoloc": "cot\u00e9 Mairie 1er",
+            "lat": 45.76948214511787,
+            "lon": 4.829723034458349,
+            "nom": "Amphith\u00e9\u00e2tre",
+            "num": "16",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69381-016"
+        },
+        {
+            "acceshan": "",
+            "adresse": "10, avenue Leclerc",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL/JCD",
+            "gestnet": "JCD",
+            "gid": 167,
+            "infoloc": "en face",
+            "lat": 45.74631034852268,
+            "lon": 4.8328516360760805,
+            "nom": "Leclerc",
+            "num": "714",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69387-714"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Henri Barbusse",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 168,
+            "infoloc": "",
+            "lat": 45.79818399301866,
+            "lon": 4.829749804924374,
+            "nom": "Barbusse",
+            "num": "912",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-912"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Emir Abd El Kader",
+            "code_insee": 69387,
+            "codepost": 69007,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 169,
+            "infoloc": "",
+            "lat": 45.75218910716059,
+            "lon": 4.846207167445673,
+            "nom": "Abdel Kader",
+            "num": "713",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69387-713"
+        },
+        {
+            "acceshan": "",
+            "adresse": "rue des Macchab\u00e9es",
+            "code_insee": 69385,
+            "codepost": 69005,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 178,
+            "infoloc": "",
+            "lat": 45.756239868733374,
+            "lon": 4.817194241558266,
+            "nom": "Balmes",
+            "num": "913",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-913"
+        },
+        {
+            "acceshan": "",
+            "adresse": "square Docteur Bouvier",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 179,
+            "infoloc": "",
+            "lat": 45.77992096528636,
+            "lon": 4.825828871370466,
+            "nom": "H\u00e9non",
+            "num": "47",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69384-047"
+        },
+        {
+            "acceshan": "",
+            "adresse": "101 boulevard de la Duch\u00e8re",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "toilette s\u00e8che",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 180,
+            "infoloc": " centre",
+            "lat": 45.77712053749306,
+            "lon": 4.794829889681253,
+            "nom": "Vallon 2",
+            "num": "916",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-916"
+        },
+        {
+            "acceshan": "",
+            "adresse": "12, quai Mar\u00e9chal Joffre",
+            "code_insee": 69382,
+            "codepost": 69002,
+            "commentaire": "hommes uniquement",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 181,
+            "infoloc": "",
+            "lat": 45.75184905768345,
+            "lon": 4.823730442390636,
+            "nom": "Joffre",
+            "num": "25",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69382-025"
+        },
+        {
+            "acceshan": "",
+            "adresse": "1, rue Lebrun",
+            "code_insee": 69384,
+            "codepost": 69004,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 182,
+            "infoloc": "",
+            "lat": 45.77488119954957,
+            "lon": 4.83654628515884,
+            "nom": "Lebrun",
+            "num": "18",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69381-018"
+        },
+        {
+            "acceshan": "",
+            "adresse": "8, rue Professeur Paul Sisley",
+            "code_insee": 69383,
+            "codepost": 69003,
+            "commentaire": "condamn\u00e9",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 184,
+            "infoloc": "dans parc",
+            "lat": 45.752162980177644,
+            "lon": 4.8684599989635515,
+            "nom": "Sisley",
+            "num": "31",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69383-031"
+        },
+        {
+            "acceshan": "",
+            "adresse": "Place Henri Barbusse",
+            "code_insee": 69389,
+            "codepost": 69009,
+            "commentaire": "",
+            "commune": "Lyon",
+            "gestequip": "VDL",
+            "gestnet": "VDL",
+            "gid": 186,
+            "infoloc": "",
+            "lat": 45.79818399301866,
+            "lon": 4.829749804924374,
+            "nom": "Chapelle",
+            "num": "914",
+            "openinghoursspecification": null,
+            "payant": "",
+            "uid": "TOI-69389-914"
+        }
+    ]
+}

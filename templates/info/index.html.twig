@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InfoController!
+{% endblock %}
+
+{% block body %}
+	<div class="filtrer-recherche">
+		<a href="{{path('app_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilette</h1>
+		<div class="identify">
+			<iconify-icon id="person" icon="charm:person"></iconify-icon>
+		</div>
+	</div>
+	<div class="container">
+
+		<div class="info">
+			<p>Nom</p>
+			<h1>{{toilette.nom}}</h1>
+			<p>Adresse / Code postal</p>
+			<h2>{{toilette.adresse}}</h2>
+			<h2>{{toilette.codepost}}</h2>
+			<p>informations</p>
+			<h2>{{toilette.infoloc}}</h2>
+			<p>commentaire</p>
+		</div>
+		<div class="inscrit">
+			<p>Lire et écrire des commentaire</p>
+			<div class="link">
+				<p>
+					<a href="">Se connecter</a>
+					/
+					<a href="">S'inscrire</a>
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -7,10 +7,10 @@
 
 	<div class="example-wrapper">
 		<div class="filtrer-recherche">
-        <form action="{{ path('app_accueil') }}" method="GET">
-			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
-			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
-            </form>
+			<form action="{{ path('app_accueil') }}" method="GET">
+				<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
+				<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
+			</form>
 
 			<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;" id="sidebar">
 				<button onclick="closeSidebar()" class="w3-bar-item w3-large">
@@ -25,13 +25,17 @@
 				<iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
 			</div>
 		</div>
-		<div class="filtrer-note"></div>
-		<div class="list">
-			{% for toilette in toilettes %}
-				<div class="nom">
-					<p>{{toilette.nom}}</p>
-				</div>
-			{% endfor %}
+		<div class="container">
+			<div class="filtrer-note"></div>
+			<div class="list">
+				{% for toilette in toilettes %}
+					<div class="nom">
+						<a href="{{ path('app_info',{'id':toilette.uid})}}">
+							<p>{{toilette.nom}}</p>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
 		</div>
 		{# <div class="gra"></div>  #}
 	</div>

@@ -13,9 +13,22 @@ body {
     background-color: #5dfdcb;
     display: flex;
     height: 123px;
+    width: 100%;
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
+    position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+
+.filtrer-recherche>form{
+    width: 80%;
+}
+
+.container {
+    padding-top: 123px;
 }
 
 .filtrer-note {
@@ -38,7 +51,6 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
-    z-index: -1;
 }
 
 .nom p {
@@ -51,7 +63,7 @@ body {
     border-radius: 25px;
     height: 42px;
     padding-left: 50px;
-    width: 75%;
+    width: 80%;
     font-size: 20px;
 }
 
@@ -74,6 +86,9 @@ body {
     height: 64px;
     justify-content: center;
     width: 64px;
+    position: absolute;
+    right: 80px;
+
     /* color:#fff!important; */
     /* background-color:#009688!important */
 }
@@ -205,3 +220,9 @@ p {
     flex-direction: column;
     justify-content: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
