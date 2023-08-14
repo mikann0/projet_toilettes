@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!
+{% endblock %}
+
+{% block body %}
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="#" class="bar-item">Voir tous vos commentaires</a>
+		<a href="#" class="bar-item">Modifier votre mot de passe</a>
+		<a href="#" class="bar-item">Supprimer votre compte</a>
+		<a href="#" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<form action="{{ path('app_accueil') }}" method="GET">
+			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
+			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
+		</form>
+		<div class="identify" onclick="openSidebar()">
+			<h1>P</h1>
+		</div>
+	</div>
+	<div class="list">
+		<div class="filtrer-note">
+			<input id="review01" type="radio" name="review"><label for="review01">★</label>
+			<input id="review02" type="radio" name="review"><label for="review02">★</label>
+			<input id="review03" type="radio" name="review"><label for="review03">★</label>
+			<input id="review04" type="radio" name="review"><label for="review04">★</label>
+			<input id="review05" type="radio" name="review"><label for="review05">★</label>
+		</div>
+		{% for toilette in toilettes %}
+			<div class="nom">
+				<a href="{{ path('app_info',{'id':toilette.uid})}}">
+					<p>{{toilette.nom}}</p>
+				</a>
+				<div class="star">
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+				</div>
+			</div>
+		{% endfor %}
+
+		<!-- <div class="gra"></div> -->
+	</div>
+
+{% endblock %}

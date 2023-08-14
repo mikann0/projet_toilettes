@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello OublieMdpController!{% endblock %}
+
+{% block body %}
+<div class="sidebar" style="display:none;" id="sidebar">
+        <button onclick="closeSidebar()" class="button"> <iconify-icon icon="charm:cross"></iconify-icon></button>
+        <a href="#" class="bar-item">Se connecter</a>
+        <a href="#" class="bar-item">S’inscrire</a>
+    </div>
+    <div class="filtrer-recherche">
+        <a href="">
+            <iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+        </a>
+        <h1>Toilettes</h1>
+        <div class="identify" onclick="openSidebar()">
+            <iconify-icon id="person" icon="charm:person"></iconify-icon>
+        </div>
+    </div>
+    <div class="container-mdp">
+        <h2>mot de passe oublié</h2>
+        <div class="con-form">
+            <label for="mail">e-mail</label>
+            <input type="text" name="mail">
+        </div>
+        <button class="button2" type="submit">valider</button>
+    </div>
+
+{% endblock %}

@@ -4,6 +4,13 @@
 {% endblock %}
 
 {% block body %}
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="#" class="bar-item">Se connecter</a>
+		<a href="#" class="bar-item">S’inscrire</a>
+	</div>
 	<div class="filtrer-recherche">
 		<a href="{{path('app_accueil')}}">
 			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
@@ -14,9 +21,15 @@
 		</div>
 	</div>
 	<div class="container">
-
 		<div class="info">
 			<p>Nom</p>
+			<div class="star" style="visibility:hidden" ;>
+				<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+				<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+				<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+				<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+				<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+			</div>
 			<h1>{{toilette.nom}}</h1>
 			<p>Adresse / Code postal</p>
 			<h2>{{toilette.adresse}}</h2>

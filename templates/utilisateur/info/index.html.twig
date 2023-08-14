@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InfoController!
+{% endblock %}
+
+{% block body %}
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			a<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="#" class="bar-item">Voir tous vos commentaires</a>
+		<a href="#" class="bar-item">Modifier votre mot de passe</a>
+		<a href="#" class="bar-item">Supprimer votre compte</a>
+		<a href="#" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<h1>P</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="info">
+			<div class="nom-star">
+				<p>Nom</p>
+				<div class="star">
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+				</div>
+			</div>
+			<h1>{{toilette.nom}}</h1>
+			<p>Adresse / Code postal</p>
+			<h2>{{toilette.adresse}}</h2>
+			<h2>{{toilette.codepost}}</h2>
+			<p>informations</p>
+			<h2>{{toilette.infoloc}}</h2>
+			<div class="com-btn">
+				<p>commentaire</p>
+				<button class="button3">Modifier</button>
+			</div>
+		</div>
+		<div class="commentaire">
+			<div class="i-date">
+				<div class="small-identify">
+					<h4>I</h4>
+				</div>
+				<p>03.01.2023</p>
+				<div class="star">
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+				</div>
+			</div>
+			<p>Pas mal...</p>
+		</div>
+		<div class="commentaire">
+			<div class="i-date">
+				<div class="small-identify">
+					<h4>K</h4>
+				</div>
+				<p>19.10.2022</p>
+				<div class="star">
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+				</div>
+			</div>
+			<p>Pas mal...</p>
+		</div>
+		<div class="commentaire">
+			<div class="i-date">
+				<div class="small-identify">
+					<h4>A</h4>
+				</div>
+				<p>30.09.2022</p>
+				<div class="star">
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+				</div>
+			</div>
+			<p>Pas mal...</p>
+		</div>
+	</div>
+
+</div>{% endblock %}

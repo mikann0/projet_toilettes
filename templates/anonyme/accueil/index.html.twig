@@ -4,30 +4,25 @@
 {% endblock %}
 
 {% block body %}
-
-	<div class="example-wrapper">
+	 <div class="sidebar" style="display:none;" id="sidebar">
+        <button onclick="closeSidebar()" class="button"> <iconify-icon
+                icon="charm:cross"></iconify-icon></button>
+        <a href="#" class="bar-item">Se connecter</a>
+        <a href="#" class="bar-item">S’inscrire</a>
+    </div>
 		<div class="filtrer-recherche">
 			<form action="{{ path('app_accueil') }}" method="GET">
 				<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
 				<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
 			</form>
 
-			<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none;" id="sidebar">
-				<button onclick="closeSidebar()" class="w3-bar-item w3-large">
-					<iconify-icon icon="charm:cross"></iconify-icon>
-				</button>
-				<a href="#" class="w3-bar-item w3-button">Link 1</a>
-				<a href="#" class="w3-bar-item w3-button">Link 2</a>
-				<a href="#" class="w3-bar-item w3-button">Link 3</a>
-			</div>
-
 			<div class="identify">
 				<iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
 			</div>
 		</div>
 		<div class="container">
-			<div class="filtrer-note"></div>
 			<div class="list">
+			<div class="filtrer-note"></div>
 				{% for toilette in toilettes %}
 					<div class="nom">
 						<a href="{{ path('app_info',{'id':toilette.uid})}}">
@@ -38,5 +33,4 @@
 			</div>
 		</div>
 		{# <div class="gra"></div>  #}
-	</div>
 {% endblock %}
