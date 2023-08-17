@@ -21,7 +21,7 @@ class InfoController extends AbstractController
         $this->logger = new Logger();
     }
 
-    #[Route('/{id}', name: 'app_info')]
+    #[Route('/toilette/{id}', name: 'app_info')]
     public function index($id): Response
     {
         $this->logger->log(LogLevel::WARNING, "Request toilette with id=".$id);
