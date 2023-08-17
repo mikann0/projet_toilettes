@@ -5,6 +5,8 @@ services:
         image: mariadb
         container_name: mariadb 
         restart: on-failure
+        ports:
+            - 3306:3306
         volumes:
             - ./db-data:/var/lib/mysql
         environment:

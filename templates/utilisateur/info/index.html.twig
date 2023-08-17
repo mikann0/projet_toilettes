@@ -6,15 +6,15 @@
 {% block body %}
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
-			a<iconify-icon icon="charm:cross"></iconify-icon>
+			<iconify-icon icon="charm:cross"></iconify-icon>
 		</button>
-		<a href="#" class="bar-item">Voir tous vos commentaires</a>
-		<a href="#" class="bar-item">Modifier votre mot de passe</a>
-		<a href="#" class="bar-item">Supprimer votre compte</a>
-		<a href="#" class="bar-item">Se déconnecter</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Se déconnecter</a>
 	</div>
 	<div class="filtrer-recherche">
-		<a href="">
+		<a href="app_utilisateur_accueil">
 			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
 		</a>
 		<h1>Toilettes</h1>

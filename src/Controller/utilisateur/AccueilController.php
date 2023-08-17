@@ -19,7 +19,7 @@ class AccueilController extends AbstractController
      $this->toilettesRepository = $repository;
  }
 
-    #[Route('/', name: 'app_utilisateur_accueil')]
+    #[Route('', name: 'app_utilisateur_accueil')]
     public function index(Request $request): Response
     {
         $searchValue = $request->query->get('searchValue');

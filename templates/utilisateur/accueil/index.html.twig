@@ -8,13 +8,13 @@
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>
 		</button>
-		<a href="#" class="bar-item">Voir tous vos commentaires</a>
-		<a href="#" class="bar-item">Modifier votre mot de passe</a>
-		<a href="#" class="bar-item">Supprimer votre compte</a>
-		<a href="#" class="bar-item">Se déconnecter</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{path('app_connexion')}}" class="bar-item">Se déconnecter</a>
 	</div>
 	<div class="filtrer-recherche">
-		<form action="{{ path('app_accueil') }}" method="GET">
+		<form action="{{ path('app_utilisateur_accueil') }}" method="GET">
 			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
 			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
 		</form>
@@ -32,7 +32,7 @@
 		</div>
 		{% for toilette in toilettes %}
 			<div class="nom">
-				<a href="{{ path('app_info',{'id':toilette.uid})}}">
+				<a href="{{ path('app_utilisateur_info',{'id':toilette.uid})}}">
 					<p>{{toilette.nom}}</p>
 				</a>
 				<div class="star">

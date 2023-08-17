@@ -5,7 +5,7 @@
 {% block body %}
     <div class="form">
         <div class="filtrer-recherche">
-            <a href="">
+            <a href="{{path('app_accueil')}}">
                 <iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
             </a>
         </div>
@@ -21,7 +21,7 @@
                 <iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
             </div>
             <button class="button1" type="submit">Se connecter</button>
-            <a href="">mot de passe oublié ?</a>
+            <a href="{{path('app_oublie_mdp')}}">mot de passe oublié ?</a>
         </form>
     </div>
 {% endblock %}

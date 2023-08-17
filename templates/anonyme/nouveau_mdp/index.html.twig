@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello OublieMdpController!{% endblock %}
+{% block title %}Hello NouveauMdpController!{% endblock %}
 
 {% block body %}
-<div class="sidebar" style="display:none;" id="sidebar">
+  <div class="sidebar" style="display:none;" id="sidebar">
         <button onclick="closeSidebar()" class="button"> <iconify-icon icon="charm:cross"></iconify-icon></button>
         <a href="{{path('app_connexion')}}" class="bar-item">Se connecter</a>
         <a href="{{path('app_connexion')}}" class="bar-item">S’inscrire</a>
@@ -18,12 +18,18 @@
         </div>
     </div>
     <div class="container-mdp">
-        <h2>mot de passe oublié</h2>
+        <h2>création d’un nouveau
+            mot de passe</h2>
         <div class="con-form">
-            <label for="mail">e-mail</label>
-            <input type="text" name="mail">
+            <label for="passe">nouveau mot de passe</label>
+            <input type="text" name="passe">
+            <iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
+        </div>
+        <div class="con-form">
+            <label for="confirmation">confirmation du mot de passe</label>
+            <input type="text" name="confirmation">
+            <iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
         </div>
         <button class="button2" type="submit">valider</button>
     </div>
-
 {% endblock %}
