@@ -356,6 +356,7 @@ body {
     flex-direction: column;
     margin-top: 40px;
     padding-top: 123px;
+    align-items: center;
 }
 
 .con-form {
