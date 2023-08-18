@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register
+{% endblock %}
+
+{% block body %}
+	<div class="form">
+		<div class="filtrer-recherche">
+			<a href="{{path('app_accueil')}}">
+				<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+			</a>
+		</div>
+		{{ form_errors(registrationForm) }}
+		{{ form_start(registrationForm) }}
+		<div class="form-inscription">
+			<h1>Inscription</h1>
+			<div class="con-form">
+				{{ form_row(registrationForm.nom,{
+            label: 'nom'
+        }) }}
+			</div>
+			<div class="con-form">
+				{{ form_row(registrationForm.email,{
+            label: 'e-mail'
+        }) }}
+			</div>
+			<div class="con-form">
+				{{ form_row(registrationForm.plainPassword, {
+            label: 'mot de passe'
+        }) }}
+				<iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
+			</div>
+
+
+		</div>
+		<button class="button1" type="submit" class="btn">créer</button>
+		{{ form_end(registrationForm) }}
+
+	</div>
+</div>{% endblock %}

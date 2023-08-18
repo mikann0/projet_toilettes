@@ -10,8 +10,8 @@
 		</button>
 		<a href="{{path('app_connexion')}}" class="bar-item">Voir tous vos commentaires</a>
 		<a href="{{path('app_connexion')}}" class="bar-item">Modifier votre mot de passe</a>
-		<a href="{{path('app_connexion')}}" class="bar-item">Supprimer votre compte</a>
-		<a href="{{path('app_connexion')}}" class="bar-item">Se déconnecter</a>
+		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
 	</div>
 	<div class="filtrer-recherche">
 		<form action="{{ path('app_utilisateur_accueil') }}" method="GET">
