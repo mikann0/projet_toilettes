@@ -14,24 +14,14 @@
 		{{ form_start(registrationForm) }}
 		<div class="form-inscription">
 			<h1>Inscription</h1>
-			<div class="con-form">
-				{{ form_row(registrationForm.nom,{
+			{{ form_row(registrationForm.nom,{
             label: 'nom'
         }) }}
-			</div>
-			<div class="con-form">
-				{{ form_row(registrationForm.email,{
+			{{ form_row(registrationForm.email,{
             label: 'e-mail'
         }) }}
-			</div>
-			<div class="con-form">
-				{{ form_row(registrationForm.plainPassword, {
-            label: 'mot de passe'
-        }) }}
+				{{ form_row(registrationForm.plainPassword) }}
 				<iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
-			</div>
-
-
 		</div>
 		<button class="button1" type="submit" class="btn">créer</button>
 		{{ form_end(registrationForm) }}

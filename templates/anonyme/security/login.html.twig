@@ -6,7 +6,7 @@
 {% block body %}
 	<div class="form">
 		<div class="filtrer-recherche">
-			<a href="">
+			<a href="{{path('app_accueil')}}">
 				<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
 			</a>
 		</div>
@@ -16,7 +16,6 @@
 				{% if error %}
 					<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 				{% endif %}
-
 				{# {% if app.user %}
 								        <div class="mb-3">
 								            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
@@ -25,22 +24,20 @@
 
 				{# <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1> #}
 				<div class="con-form">
-
 					<label for="inputEmail">e-mail</label>
 					<input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
 				</div>
 				<div class="con-form">
-
+					<iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
 					<label for="inputPassword">mot de passe</label>
 					<input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
-					<iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
-
 					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 				</div>
 				<button class="button1 btn btn-lg btn-primary" type="submit">
 					Se connecter
 				</button>
-				<a href="">mot de passe oublié ?</a>
+				</br>
+				<a href="{{path('app_oublie_mdp')}}">mot de passe oublié ?</a>
 
 			</form>
 		</div>

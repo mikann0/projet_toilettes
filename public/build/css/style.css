@@ -14,10 +14,10 @@ body {
     align-items: center;
     background-color: #5dfdcb;
     display: flex;
-    height: 123px;
+    height: 250px;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,11 +26,11 @@ body {
 
 
 .filtrer-recherche>form {
-    width: 80%;
+    width: 90%;
 }
 
 .container {
-    padding-top: 123px;
+    padding-top: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -65,17 +65,16 @@ body {
     color: #56CBF9;
 }
 
-
+/* list toilette */
 .nom {
     align-items: center;
     box-shadow: 0px 3px 3px #dbdbdb;
     display: flex;
-    height: 87px;
+    height: 180px;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 15px 50px;
     position: relative;
-    font-size: 22px;
+    font-size: 60px;
 }
 
 .nom>a {
@@ -84,16 +83,26 @@ body {
 }
 
 .container h1 {
-    margin: 0;
+    /* margin: 0; */
+    font-size: 70px;
 }
+
+.container p {
+font-size: 30px;
+}
+
+.container h2 {
+    font-size: 50px;
+    }
+    
 
 #recherche {
     border: 0;
-    border-radius: 25px;
-    height: 42px;
-    padding-left: 50px;
-    width: 55%;
-    font-size: 20px;
+    border-radius: 50px;
+    height:100px;
+    padding-left: 100px;
+    width: 60%;
+    font-size: 50px;
 }
 
 #recherche:current {
@@ -101,10 +110,10 @@ body {
 }
 
 #serch {
-    font-size: 23px;
-    left: 35px;
+    font-size: 50px;
+    left: 80px;
     position: absolute;
-    top: 50px;
+    top: 100px;
 }
 
 .identify {
@@ -112,11 +121,11 @@ body {
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
-    height: 64px;
+    height: 150px;
     justify-content: center;
-    width: 64px;
+    width: 150px;
     position: absolute;
-    right: 80px;
+    right: 150px;
 
     /* color:#fff!important; */
     /* background-color:#009688!important */
@@ -141,7 +150,7 @@ body {
 
 
 #person {
-    font-size: 33px;
+    font-size: 80px;
 }
 
 
@@ -179,9 +188,9 @@ body {
     font-size: 20px;
 }
 
-
+/* sidebar */
 .sidebar {
-    width: 300px;
+    width: 600px;
     background-color: #fff;
     z-index: 2;
     position: fixed;
@@ -198,25 +207,25 @@ body {
 
 .button {
     padding: 0;
-    font-size: 25px;
+    font-size: 75px;
     color: #ffffff;
-    height: 50px;
+    height: 150px;
     background-color: #56CBF9;
     width: 100%;
     z-index: 1;
-    padding: 12px 16px;
+    padding: 40px 25px;
 }
 
 .bar-item {
     display: inline-block;
-    padding: 25px 16px;
+    padding: 60px 35px;
     text-decoration: none;
     cursor: pointer;
-    width: 268px;
-    height: 20px;
+    width: 530px;
+    height: 60px;
     color: #ffffff;
     box-shadow: 0px 3px 1px #56CBF9;
-    font-size: 18px;
+    font-size: 50px;
 }
 
 .bar-item:hover {
@@ -236,25 +245,26 @@ body {
 .list {
     /* position: relative; */
     height: 655px;
-    padding-top: 123px;
+    padding-top: 250px;
     display: flex;
     flex-direction: column;
 }
 
 .filtrer-recherche>h1 {
     color: #ffffff;
+    font-size: 70px;
 }
 
 #arrow {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 120px;
     padding-right: 3%;
 
 }
 
 .info {
-    padding-top: 25px;
-    padding-left: 45px;
+    padding-top: 70px;
+    padding-left: 70px;
     /* height: 430px; */
     display: flex;
     flex-direction: column;
@@ -264,7 +274,7 @@ body {
     text-align: center;
     background: linear-gradient(0deg, rgb(219, 219, 219), rgb(219, 219, 219, 1) 90%, rgb(219, 219, 219, 0));
     color: #56CBF9;
-    height: 306px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,6 +282,7 @@ body {
 
 .link>p>a {
     color: #56CBF9;
+    font-size: 30px;
 }
 
 #sidebar>a {
@@ -279,27 +290,27 @@ body {
     color: black;
 }
 
-.button1 {
+.button1, .button2, .button3 {
     color: #56CBF9;
-    height: 40px;
+    height: 80px;
     background-color: #ffffff;
-    border-radius: 30px;
-    width: 130px;
+    border-radius: 50px;
+    width: 300px;
     border: none;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 36px;
+    font-weight:bold;
+}
+
+.button2{
+    color: #ffffff;
+    background-color: #56CBF9;
+    margin-top: 80px;
+    align-self: center;
 }
 
 .button3 {
-    color: #56CBF9;
-    height: 40px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    width: 130px;
     border-color: #56CBF9;
     border-width: 1px;
-    font-size: 18px;
-    font-weight: 100;
 }
 
 /*toilette-une -avec*/
@@ -355,7 +366,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    padding-top: 123px;
+    padding-top: 250px;
     align-items: center;
 }
 
@@ -365,31 +376,40 @@ body {
     position: relative;
 }
 
-.con-form>input {
+.con-form input {
     border: none;
-    height: 35px;
-    width: 280px;
+    height:80px;
+    width: 500px;
     background-color: #ffffff;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 50px;
+    font-size: 40px;
 }
 
-.form-inscription>h1 {
+.form-inscription h1 {
+    font-size: 70px;
     text-align: center;
     margin-bottom: 70px;
 }
 
-.form-inscription>.con-form {
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inscription .con-form {
     align-self: center;
+    margin-bottom: 50px;
 }
 
 .con-form>label {
     margin-bottom: 5px;
+    font-size: 40px;
 }
 
 
-.form-inscription>button {
+.form-inscription button {
     margin-top: 80px;
     margin-bottom: 100px;
     align-self: center;
@@ -397,25 +417,26 @@ body {
 
 #eye {
     color: #56CBF9;
-    font-size: 23px;
-    right: 20px;
+    font-size: 55px;
+    right: 25px;
     position: absolute;
 }
 
-.form-inscription>a {
+.form-inscription a {
     color: #ffffff;
     align-self: center;
+    font-size: 40px;
 }
 
-.form-inscription #eye {
-    top: 30px;
+.form-inscription #eye, .container-mdp #eye{
+    top: 65px;
 }
 
 /* form  mdp oublie et nouveau*/
 .container-mdp {
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 123px;
+    padding-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,36 +447,19 @@ body {
     border-color: #56CBF9;
 }
 
-.container-mdp>h2 {
-    margin-top: 80px
+.container-mdp>h1 {
+    margin-top: 120px;
+    font-size: 70px;
+    text-align: center;
 }
 
 .container-mdp>.con-form {
     margin-top: 30px;
 }
 
-.container-mdp>.button2,
-.container>.button2 {
-    color: #ffffff;
-    height: 40px;
-    background-color: #56CBF9;
-    border-radius: 30px;
-    width: 130px;
-    border: none;
-    border-width: 1px;
-    font-size: 18px;
-    font-weight: 100;
-    margin-top: 80px;
-    align-self: center;
-}
-
 .container-mdp>.con-form:nth-child(3),
 .container-mdp>.con-form:nth-child(4) {
     margin-top: 30px;
-}
-
-.container-mdp #eye {
-    top: 40px;
 }
 
 /* commentaires */
@@ -464,7 +468,6 @@ body {
     height: 135px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-left: 45px;
     padding-top: 10px;
 }
 
@@ -521,7 +524,7 @@ body {
 
 .container-mdp label {
     align-self: baseline;
-    font-size: 22px;
+    font-size: 40px;
 }
 
 .container-mdp>a {
