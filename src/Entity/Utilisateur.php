@@ -47,6 +47,8 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     public function __construct()
     {
         $this->comments = new ArrayCollection();
+        $this->date_ins = new \DateTime();
+        $this->last_login = new \DateTime();
     }
 
     public function getId(): ?int
