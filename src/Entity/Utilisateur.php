@@ -35,10 +35,10 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 30)]
     private ?string $nom;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_IMMUTABLE)]
     private ?\DateTimeInterface $date_ins;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $last_login;
 
     #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
@@ -47,8 +47,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     public function __construct()
     {
         $this->comments = new ArrayCollection();
-        $this->date_ins = new \DateTime();
-        $this->last_login = new \DateTime();
+        $this->date_ins = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
