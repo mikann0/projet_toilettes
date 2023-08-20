@@ -47,7 +47,8 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     public function __construct()
     {
         $this->comments = new ArrayCollection();
-        $this->date_ins = new \DateTimeImmutable();
+       $this->date_ins = new \DateTimeImmutable();
+        $this->addRole("ROLE_UTILISATEUR");
     }
 
     public function getId(): ?int

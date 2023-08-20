@@ -32,8 +32,11 @@ security:
     # Note: Only the *first* access control that matches will be used
     access_control:
         - { path: ^/utilisateur, roles: ROLE_UTILISATEUR }
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/moderation, roles: ROLE_MODERATION }
+        # - { path: ^/profile, roles: ROLE_COMMENT }
+
+    #role_hierarchy:
+        #ROLE_MODERATION: ROLE_UTILISATEUR
 
 when@test:
     security:
