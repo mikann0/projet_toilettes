@@ -42,10 +42,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 66px;
+    height: 120px;
     padding-left: 70px;
     padding-right: 70px;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
 
 .filtrer-note input[type='radio'] {
@@ -54,7 +54,7 @@ body {
 
 .list>.filtrer-note label {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 90px;
     padding: 0 5px;
     cursor: pointer;
 }
@@ -131,6 +131,10 @@ font-size: 30px;
     /* background-color:#009688!important */
 }
 
+.identify>h1{
+    font-size: 80px;
+}
+
 .small-identify {
     align-items: center;
     background-color: #dbdbdb;
@@ -180,7 +184,7 @@ font-size: 30px;
 
 .star>.filter-star,
 .star>.no-filter-star {
-    font-size: 24px;
+    font-size: 50px;
 }
 
 .star>.s-filter-star,
@@ -310,7 +314,7 @@ font-size: 30px;
 
 .button3 {
     border-color: #56CBF9;
-    border-width: 1px;
+    border: 1px solid;
 }
 
 /*toilette-une -avec*/
@@ -415,7 +419,7 @@ form{
     align-self: center;
 }
 
-#eye {
+#eye1 {
     color: #56CBF9;
     font-size: 55px;
     right: 25px;
@@ -428,7 +432,7 @@ form{
     font-size: 40px;
 }
 
-.form-inscription #eye, .container-mdp #eye{
+.form-inscription #eye1, .container-mdp #eye1{
     top: 65px;
 }
 

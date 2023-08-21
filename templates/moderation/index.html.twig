@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ModerationControllrController!{% endblock %}
+
+{% block body %}
+<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		 {% if is_granted('ROLE_MODERATION') %}
+          <a href="{{path('app_moderation_controller')}}"  class="bar-item">MODERATION</a>
+         {% endif %}
+		<a href="{{path('app_register')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="{{path('app_utilisateur_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<h1>P</h1>
+		</div>
+	</div>
+	<div class="container">
+
+<h2>moderation</h2>
+<a href="{{path('app_moderation_utilisateur_index')}}">utilisateur</a>
+<a href="{{path('app_moderation_comment_index')}}">comment</a>
+</div>
+{% endblock %}

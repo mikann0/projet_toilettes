@@ -21,11 +21,11 @@ class InfoController extends AbstractController
         $this->logger = new Logger();
     }
 
-    #[Route('/toilette/{id}', name: 'app_info')]
-    public function index($id): Response
+    #[Route('/toilette/{tid}', name: 'app_info')]
+    public function index($tid): Response
     {
-        $this->logger->log(LogLevel::WARNING, "Request toilette with id=".$id);
-        $uneToilette = $this->toilettesRepository->uneToilette($id);
+        $this->logger->log(LogLevel::WARNING, "Request toilette with id=".$tid);
+        $uneToilette = $this->toilettesRepository->uneToilette($tid);
         return $this->render('anonyme/info/index.html.twig', [
             'toilette' => $uneToilette,
         ]);

@@ -24,7 +24,7 @@
 		<div class="filtrer-note"></div>
 			{% for toilette in toilettes %}
 				<div class="nom">
-					<a href="{{ path('app_info',{'id':toilette.uid})}}">
+					<a href="{{ path('app_info',{'tid':toilette.uid})}}">
 						<p>{{toilette.nom}}</p>
 					</a>
 				</div>

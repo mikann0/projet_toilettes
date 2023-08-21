@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Commentaire index{% endblock %}
+
+{% block body %}
+    <h1>Comment index</h1>
+
+	 <table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Note</th>
+				<th>En_panne</th>
+				<th>N_existe__plus</th>
+				<th>Acces_handicape</th>
+				<th>Commentaire</th>
+				<th>Date_commentaire</th>
+				<th>Id_toilette</th>
+				<th>actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for comment in comments %}
+				<tr>
+					<td>{{ comment.id }}</td>
+					<td>{{ comment.note }}</td>
+					<td>{{ comment.enPanne }}</td>
+					<td>{{ comment.nExistePlus }}</td>
+					<td>{{ comment.accesHandicape }}</td>
+					<td>{{ comment.commentaire }}</td>
+					<td>{{ comment.dateCommentaire ? comment.dateCommentaire|date('Y-m-d H:i:s') : '' }}</td>
+					<td>{{ comment.idToilette }}</td>
+					<td>
+						<a href="{{ path('app_moderation_comment_show', {'id': comment.id}) }}">show</a>
+						{# <a href="{{ path('app_moderation_comment_edit', {'id': comment.id}) }}">edit</a> #}
+					</td>
+				</tr>
+			{% else %}
+				<tr>
+					<td colspan="9">no records found</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	{# <a href="{{ path('app_moderation_comment_new') }}">Create new</a>  #}
+{% endblock %}

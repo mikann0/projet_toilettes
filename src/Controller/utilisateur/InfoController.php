@@ -3,11 +3,14 @@
 namespace App\Controller\utilisateur;
 
 use App\Repository\ToilettesRepository;
+use App\Repository\CommentRepository;
+use App\Entity\Utilisateur;
 use Psr\Log\LogLevel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Log\Logger;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\SecurityBundle\Security;
 
 #[Route('/utilisateur')]
 class InfoController extends AbstractController
@@ -22,13 +25,24 @@ class InfoController extends AbstractController
         $this->logger = new Logger();
     }
 
-    #[Route('/toilette/{id}', name: 'app_utilisateur_info')]
-    public function index($id): Response
+
+    #[Route('/toilette/{tid}', name: 'app_utilisateur_info')]
+    public function index($tid, CommentRepository $commentRepository, Security $security): Response
     {
-        $this->logger->log(LogLevel::WARNING, "Request toilette with id=".$id);
-        $uneToilette = $this->toilettesRepository->uneToilette($id);
-        return $this->render('utilisateur/info/index.html.twig', [
-            'toilette' => $uneToilette,
-        ]);
+        $this->logger->log(LogLevel::WARNING, "Request toilette with id=" . $tid);
+        $uneToilette = $this->toilettesRepository->uneToilette($tid);
+        $token = $security->getToken();
+        if ($token !== null) {
+            $this->logger->log(LogLevel::WARNING, "token=" . $token);
+
+            $utilisateur = $token->getUser();
+            $comments = $commentRepository->findBy(['id_toilette' => $tid]);
+            dd($comments);
+            return $this->render('utilisateur/info/index.html.twig', [
+                'toilette' => $uneToilette,
+                'comments' => $comments,
+                'utilisateur' => $utilisateur,
+            ]);
+        }
     }
 }

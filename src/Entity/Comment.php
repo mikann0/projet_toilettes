@@ -52,7 +52,6 @@ class Comment
     public function setNote(int $note)
     {
         $this->note = $note;
-
     }
 
     public function getEnPanne(): ?int
@@ -83,7 +82,6 @@ class Comment
     public function setAccesHandicape(?int $acces_handicape)
     {
         $this->acces_handicape = $acces_handicape;
-
     }
 
     public function getCommentaire(): ?string
@@ -104,7 +102,6 @@ class Comment
     public function setDateCommentaire(\DateTimeInterface $date_commentaire)
     {
         $this->date_commentaire = $date_commentaire;
-
     }
 
     public function getIdUtilisateur(): ?Utilisateur

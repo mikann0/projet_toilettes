@@ -45,12 +45,13 @@
 				<button class="button3">Modifier</button>
 			</div>
 		</div>
+	{% for comment in comments %}
 		<div class="commentaire">
 			<div class="i-date">
 				<div class="small-identify">
-					<h4>I</h4>
+					<h4>{{comment.id_utilisateur.nom|first|upper}}</h4>
 				</div>
-				<p>03.01.2023</p>
+				<p>{{comment.date_commentaire}}</p>
 				<div class="star">
 					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
 					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
@@ -59,40 +60,9 @@
 					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
 				</div>
 			</div>
-			<p>Pas mal...</p>
+			<p>{{comment.en_panne}}{{comment.n_existe__plus}}{{comment.acces_handicape}}</p>
+			<p>{{comment.commentaire}}</p>
 		</div>
-		<div class="commentaire">
-			<div class="i-date">
-				<div class="small-identify">
-					<h4>K</h4>
-				</div>
-				<p>19.10.2022</p>
-				<div class="star">
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-				</div>
-			</div>
-			<p>Pas mal...</p>
-		</div>
-		<div class="commentaire">
-			<div class="i-date">
-				<div class="small-identify">
-					<h4>A</h4>
-				</div>
-				<p>30.09.2022</p>
-				<div class="star">
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-				</div>
-			</div>
-			<p>Pas mal...</p>
-		</div>
+	{% endfor %}
 	</div>
-
 </div>{% endblock %}
