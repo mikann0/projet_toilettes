@@ -140,11 +140,15 @@ font-size: 30px;
     background-color: #dbdbdb;
     border-radius: 50%;
     display: flex;
-    height: 32px;
+    height: 64px;
     justify-content: center;
-    width: 32px;
+    width: 64px;
+    margin-right: 40px;
 }
 
+.small-identify>h4{
+     font-size: 30px;
+}
 
 .identify:hover {
     /* color:#000!important; */
@@ -323,6 +327,10 @@ font-size: 30px;
     display: flex;
 }
 
+.com-btn {
+    margin-bottom: 30px;
+}
+
 .nom-star>.star {
     margin-top: 16px;
     margin-left: 110px;
@@ -335,11 +343,11 @@ font-size: 30px;
 
 .commentaire {
     box-shadow: 0px 3px 3px #dbdbdb;
-    height: 100px;
+    /* height: 100px; */
     justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
 }
 
 .i-date,
@@ -351,6 +359,16 @@ font-size: 30px;
 .i-date>p,
 .i-date>.star {
     margin-left: 25px;
+}
+
+.check-commentaire{
+    display: flex;
+}
+
+.commentaire p {
+    font-size: 40px;
+    margin: 20px 0;
+    margin-right: 30px;
 }
 
 /*form inscription*/

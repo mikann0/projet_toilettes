@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/utilisateur/{uid}/toilette/{tid}/comment')]
+#[Route('/utilisateur/toilette/{tid}/comment')]
 class ToiletteCommentController extends AbstractController
 {
 

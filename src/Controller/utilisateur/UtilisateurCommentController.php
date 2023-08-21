@@ -5,21 +5,52 @@ namespace App\Controller\utilisateur;
 use App\Entity\Comment;
 use App\Form\CommentType;
 use App\Repository\CommentRepository;
+use App\Repository\ToilettesRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LogLevel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Log\Logger;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\SecurityBundle\Security;
 
-#[Route('/utilisateur/{uid}/comment')]
+#[Route('/utilisateur/comment')]
 class UtilisateurCommentController extends AbstractController
 {
-    #[Route('/', name: 'app_comment_index', methods: ['GET'])]
-    public function index(CommentRepository $commentRepository): Response
+    public $toilettesRepository;
+    public $logger;
+
+    public function __construct(ToilettesRepository $repository)
     {
-        return $this->render('utilisateur/comment/index.html.twig', [
-            'comments' => $commentRepository->findAll(),
-        ]);
+        // Initialize properties with constructor parameters
+        $this->toilettesRepository = $repository;
+        $this->logger = new Logger();
+    }
+
+    #[Route('/', name: 'app_comment_index', methods: ['GET'])]
+    public function index(CommentRepository $commentRepository, Security $security): Response
+    {
+        $token = $security->getToken();
+        if ($token !== null) {
+            $this->logger->log(LogLevel::WARNING, "token=" . $token);
+
+            /** @var Utilisateur $utilisateur */
+            $utilisateur = $token->getUser();
+            $comments = $commentRepository->findBy(["id_utilisateur"=>$utilisateur->getId()]);
+            $toiletById = [];
+            foreach ($comments as $comment) {
+                $toiletId = $comment->getid_toilette();
+                $toilet = $this->toilettesRepository->uneToilette($toiletId);
+                $toiletById[$toiletId] = $toilet;
+            }
+
+            return $this->render('utilisateur/comment/index.html.twig', [
+                'comments' => $comments,
+                'utilisateur' => $utilisateur,
+                'toiletById' => $toiletById
+            ]);
+        }
     }
 
     #[Route('/new', name: 'app_comment_new', methods: ['GET', 'POST'])]

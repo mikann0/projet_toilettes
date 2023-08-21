@@ -8,7 +8,7 @@
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>
 		</button>
-		<a href="{{path('app_register')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_comment_index')}}" class="bar-item">Voir tous vos commentaires</a>
 		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
 		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
 		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
@@ -19,7 +19,7 @@
 		</a>
 		<h1>Toilettes</h1>
 		<div class="identify" onclick="openSidebar()">
-			<h1>P</h1>
+			<h1>{{utilisateur.nom|first|upper}}</h1>
 		</div>
 	</div>
 	<div class="container">
@@ -51,7 +51,7 @@
 				<div class="small-identify">
 					<h4>{{comment.id_utilisateur.nom|first|upper}}</h4>
 				</div>
-				<p>{{comment.date_commentaire}}</p>
+				<p>{{comment.date_commentaire|date('Y-m-d')}}</p>
 				<div class="star">
 					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
 					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
@@ -60,8 +60,18 @@
 					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
 				</div>
 			</div>
-			<p>{{comment.en_panne}}{{comment.n_existe__plus}}{{comment.acces_handicape}}</p>
-			<p>{{comment.commentaire}}</p>
+			<div class="check-commentaire">
+				{% if comment.en_panne == 1 %}
+					<p>en panne</p>	 
+				{% endif %}	
+				{% if comment.n_existe__plus == 1 %}
+					<p>n'existe plus</p>	 
+				{% endif %}	
+				{% if comment.acces_handicape == 1 %}
+					<p>n'existe plus</p>	 
+				{% endif %}	
+			</div>
+				<p>{{comment.commentaire}}</p>
 		</div>
 	{% endfor %}
 	</div>

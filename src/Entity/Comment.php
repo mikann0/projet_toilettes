@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\CommentRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\Utilisateur;
 
 #[ORM\Entity(repositoryClass: CommentRepository::class)]
 class Comment
@@ -54,32 +55,32 @@ class Comment
         $this->note = $note;
     }
 
-    public function getEnPanne(): ?int
+    public function geten_panne(): ?int
     {
         return $this->en_panne;
     }
 
-    public function setEnPanne(?int $en_panne)
+    public function seten_panne(?int $en_panne)
     {
         $this->en_panne = $en_panne;
     }
 
-    public function getNExistePlus(): ?int
+    public function getn_existe__plus(): ?int
     {
         return $this->n_existe__plus;
     }
 
-    public function setNExistePlus(?int $n_existe__plus)
+    public function setn_existe__plus(?int $n_existe__plus)
     {
         $this->n_existe__plus = $n_existe__plus;
     }
 
-    public function getAccesHandicape(): ?int
+    public function getacces_handicape(): ?int
     {
         return $this->acces_handicape;
     }
 
-    public function setAccesHandicape(?int $acces_handicape)
+    public function setacces_handicape(?int $acces_handicape)
     {
         $this->acces_handicape = $acces_handicape;
     }
@@ -94,32 +95,32 @@ class Comment
         $this->commentaire = $commentaire;
     }
 
-    public function getDateCommentaire(): ?\DateTimeInterface
+    public function getdate_commentaire(): ?\DateTimeInterface
     {
         return $this->date_commentaire;
     }
 
-    public function setDateCommentaire(\DateTimeInterface $date_commentaire)
+    public function setdate_commentaire(\DateTimeInterface $date_commentaire)
     {
         $this->date_commentaire = $date_commentaire;
     }
 
-    public function getIdUtilisateur(): ?Utilisateur
+    public function getid_utilisateur(): ?Utilisateur
     {
         return $this->id_utilisateur;
     }
 
-    public function setIdUtilisateur(?Utilisateur $id_utilisateur)
+    public function setid_utilisateur(?Utilisateur $id_utilisateur)
     {
         $this->id_utilisateur = $id_utilisateur;
     }
 
-    public function getIdToilette(): ?string
+    public function getid_toilette(): ?string
     {
         return $this->id_toilette;
     }
 
-    public function setIdToilette(string $id_toilette)
+    public function setid_toilette(string $id_toilette)
     {
         $this->id_toilette = $id_toilette;
     }

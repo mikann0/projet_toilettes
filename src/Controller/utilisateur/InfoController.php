@@ -34,10 +34,9 @@ class InfoController extends AbstractController
         $token = $security->getToken();
         if ($token !== null) {
             $this->logger->log(LogLevel::WARNING, "token=" . $token);
-
             $utilisateur = $token->getUser();
             $comments = $commentRepository->findBy(['id_toilette' => $tid]);
-            dd($comments);
+
             return $this->render('utilisateur/info/index.html.twig', [
                 'toilette' => $uneToilette,
                 'comments' => $comments,
