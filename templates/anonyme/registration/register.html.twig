@@ -20,8 +20,17 @@
 			{{ form_row(registrationForm.email,{
             label: 'e-mail'
         }) }}
-				{{ form_row(registrationForm.plainPassword) }}
-				<iconify-icon id="eye1" icon="mdi:eye"></iconify-icon>
+			<div class="con-form">
+				<i class="fa fa-eye" id="eye1" aria-hidden="true"></i>
+				{{ form_label(registrationForm.plainPassword.first) }}
+				{{ form_widget(registrationForm.plainPassword.first) }}
+			</div>
+			<div class="con-form">
+				<i class="fa fa-eye" id="eye1" aria-hidden="true"></i>
+				{{ form_label(registrationForm.plainPassword.second) }}
+				{{ form_widget(registrationForm.plainPassword.second) }}
+			</div>
+
 		</div>
 		<button class="button1" type="submit" class="btn">créer</button>
 		{{ form_end(registrationForm) }}

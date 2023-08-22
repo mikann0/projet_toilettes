@@ -35,8 +35,8 @@ class CommentType extends AbstractType
                 'attr'  =>  ['class' => 'form-inactive','id' => 'commentaire', 'disabled' => 'true' ],
             ])
             ->add('date_commentaire')
-            ->add('id_toilette')
-            ->add('id_utilisateur')
+           // ->add('id_toilette')
+           // ->add('id_utilisateur')
         ;
     }
 

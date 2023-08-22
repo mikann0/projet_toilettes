@@ -26,7 +26,7 @@
 		{% for comment in comments %}
 			<div class="list-commentaire">
 				<div class="i-date">
-					<h4>{{ toiletById[comment.id_toilette].nom }}</h4>
+					<h2>{{ toiletById[comment.id_toilette].nom }}</h2>
 					<p>{{ comment.date_commentaire|date('Y-m-d')}}</p>
 				</div>
 				<div class="star">
