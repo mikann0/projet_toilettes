@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Comment;
 use App\Repository\UtilisateurRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -41,12 +42,12 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $last_login;
 
-    #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
-    private Collection $comments;
+    // #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
+    // private Collection $comments;
 
     public function __construct()
     {
-        $this->comments = new ArrayCollection();
+        // $this->comments = new ArrayCollection();
        $this->date_ins = new \DateTimeImmutable();
         $this->addRole("ROLE_UTILISATEUR");
     }
@@ -164,7 +165,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     {
         if (!$this->comments->contains($comment)) {
             $this->comments->add($comment);
-            $comment->setIdUtilisateur($this);
+            $comment->setid_utilisateur($this);
         }
     }
 
@@ -172,8 +173,8 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     {
         if ($this->comments->removeElement($comment)) {
             // set the owning side to null (unless already changed)
-            if ($comment->getIdUtilisateur() === $this) {
-                $comment->setIdUtilisateur(null);
+            if ($comment->getid_utilisateur() === $this) {
+                $comment->setid_utilisateur(null);
             }
         }
     }

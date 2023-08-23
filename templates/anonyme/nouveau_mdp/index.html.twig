@@ -22,13 +22,13 @@
             mot de passe</h1>
         <div class="con-form">
             <label for="passe">nouveau mot de passe</label>
-            <input type="text" name="passe">
-            <iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
+            <input type="password" name="passe" id="inputPassword1" required>
+				<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
         </div>
         <div class="con-form">
             <label for="confirmation">confirmation du mot de passe</label>
-            <input type="text" name="confirmation">
-            <iconify-icon id="eye" icon="mdi:eye"></iconify-icon>
+            <input type="password" name="confirmation" id="inputPassword2" required>
+				<i class="fa fa-eye" id="eye2" aria-hidden="true" onclick="togglePassword2()"></i>
         </div>
         <button class="button2" type="submit">valider</button>
     </div>

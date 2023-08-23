@@ -24,12 +24,12 @@
 				<tr>
 					<td>{{ comment.id }}</td>
 					<td>{{ comment.note }}</td>
-					<td>{{ comment.enPanne }}</td>
-					<td>{{ comment.nExistePlus }}</td>
-					<td>{{ comment.accesHandicape }}</td>
+					<td>{{ comment.en_panne }}</td>
+					<td>{{ comment.n_existe__plus }}</td>
+					<td>{{ comment.acces_handicape }}</td>
 					<td>{{ comment.commentaire }}</td>
-					<td>{{ comment.dateCommentaire ? comment.dateCommentaire|date('Y-m-d H:i:s') : '' }}</td>
-					<td>{{ comment.idToilette }}</td>
+					<td>{{ comment.date_commentaire|date('Y-m-d')}}</td>
+					<td>{{ comment.id_toilette }}</td>
 					<td>
 						<a href="{{ path('app_moderation_comment_show', {'id': comment.id}) }}">show</a>
 						{# <a href="{{ path('app_moderation_comment_edit', {'id': comment.id}) }}">edit</a> #}
@@ -43,5 +43,5 @@
 		</tbody>
 	</table>
 
-	{# <a href="{{ path('app_moderation_comment_new') }}">Create new</a>  #}
+	<a href="{{ path('app_moderation_comment_new') }}">Create new</a> 
 {% endblock %}

@@ -13,11 +13,12 @@
 		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
 	</div>
   <div class="filtrer-recherche">
-    <a href="">
+    <a href="{{path('app_utilisateur_accueil')}}">
       <iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
-  </a>    <h1>Toilettes</h1>
+  </a>    
+  <h1>Toilettes</h1>
     <div class="identify" onclick="openSidebar()">
-      <iconify-icon id="person" icon="charm:person"></iconify-icon>
+			<h1>{{utilisateur.nom|first|upper}}</h1>
     </div>
   </div>
   <div class="container-mdp">
@@ -37,6 +38,6 @@
 
     </form>
     <button class="button2" type="submit">valider</button>
-    <a href="">Annuler</a>
+    <a href="{{path('app_utilisateur_accueil')}}">Annuler</a>
   </div>
 {% endblock %}

@@ -14,7 +14,7 @@
 		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
 	</div>
 	<div class="filtrer-recherche">
-		<a href="">
+		<a href="{{path('app_utilisateur_accueil')}}">
 			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
 		</a>
 		<h1>Toilettes</h1>
@@ -25,30 +25,33 @@
 	<div class="container">
 		{% for comment in comments %}
 			<div class="list-commentaire">
-				<div class="i-date">
-					<h2>{{ toiletById[comment.id_toilette].nom }}</h2>
-					<p>{{ comment.date_commentaire|date('Y-m-d')}}</p>
-				</div>
-				<div class="star">
-					<P>{{ comment.note }}</p>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-				</div>
-				<div class="check-commentaire">
-				{% if comment.en_panne == 1 %}
-					<p>en panne</p>	 
-				{% endif %}	
-				{% if comment.n_existe__plus == 1 %}
-					<p>n'existe plus</p>	 
-				{% endif %}	
-				{% if comment.acces_handicape == 1 %}
-					<p>n'existe plus</p>	 
-				{% endif %}	
-			</div>
-				<p>{{comment.commentaire}}</p>
+				<a href="{{ path('app_comment_edit',{'cid':comment.id})}}">
+					<div class="i-date">
+						<h2>{{ toiletById[comment.id_toilette].nom }}</h2>
+						<p>{{ comment.date_commentaire|date('Y-m-d')}}</p>
+					</div>
+					<div
+						class="star">
+						{# <P>{{ comment.note }}</p> #}
+						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+					</div>
+					<div class="check-commentaire">
+						{% if comment.en_panne == 1 %}
+							<p>en panne</p>
+						{% endif %}
+						{% if comment.n_existe__plus == 1 %}
+							<p>n'existe plus</p>
+						{% endif %}
+						{% if comment.acces_handicape == 1 %}
+							<p>n'existe plus</p>
+						{% endif %}
+					</div>
+					<p>{{comment.commentaire}}</p>
+				</a>
 			</div>
 		{% else %}
 			<p>no records found</p>
@@ -57,42 +60,42 @@
 	</div>
 
 	{# <table class="table">
-		<thead>
-			<tr>
-				<th>Id</th>
-				<th>Note</th>
-				<th>En_panne</th>
-				<th>N_existe__plus</th>
-				<th>Acces_handicape</th>
-				<th>Commentaire</th>
-				<th>Date_commentaire</th>
-				<th>Id_toilette</th>
-				<th>actions</th>
-			</tr>
-		</thead>
-		<tbody>
-			{% for comment in comments %}
-				<tr>
-					<td>{{ comment.id }}</td>
-					<td>{{ comment.note }}</td>
-					<td>{{ comment.enPanne }}</td>
-					<td>{{ comment.nExistePlus }}</td>
-					<td>{{ comment.accesHandicape }}</td>
-					<td>{{ comment.commentaire }}</td>
-					<td>{{ comment.dateCommentaire ? comment.dateCommentaire|date('Y-m-d H:i:s') : '' }}</td>
-					<td>{{ comment.idToilette }}</td>
-					<td>
-						<a href="{{ path('app_comment_show', {'id': comment.id}) }}">show</a>
-						<a href="{{ path('app_comment_edit', {'id': comment.id}) }}">edit</a>
-					</td>
-				</tr>
-			{% else %}
-				<tr>
-					<td colspan="9">no records found</td>
-				</tr>
-			{% endfor %}
-		</tbody>
-	</table>
-
-	<a href="{{ path('app_comment_new') }}">Create new</a> #}
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Note</th>
+						<th>En_panne</th>
+						<th>N_existe__plus</th>
+						<th>Acces_handicape</th>
+						<th>Commentaire</th>
+						<th>Date_commentaire</th>
+						<th>Id_toilette</th>
+						<th>actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for comment in comments %}
+						<tr>
+							<td>{{ comment.id }}</td>
+							<td>{{ comment.note }}</td>
+							<td>{{ comment.enPanne }}</td>
+							<td>{{ comment.nExistePlus }}</td>
+							<td>{{ comment.accesHandicape }}</td>
+							<td>{{ comment.commentaire }}</td>
+							<td>{{ comment.dateCommentaire ? comment.dateCommentaire|date('Y-m-d H:i:s') : '' }}</td>
+							<td>{{ comment.idToilette }}</td>
+							<td>
+								<a href="{{ path('app_comment_show', {'id': comment.id}) }}">show</a>
+								<a href="{{ path('app_comment_edit', {'id': comment.id}) }}">edit</a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="9">no records found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		
+			<a href="{{ path('app_comment_new') }}">Create new</a> #}
 {% endblock %}

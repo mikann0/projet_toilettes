@@ -14,10 +14,10 @@ body {
     align-items: center;
     background-color: #5dfdcb;
     display: flex;
-    height: 250px;
+    height: 123px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    padding-top: 250px;
+    padding-top: 123px;
     display: flex;
     flex-direction: column;
 }
@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 120px;
+    height: 66px;
     padding-left: 70px;
     padding-right: 70px;
     flex-direction: row-reverse;
@@ -54,7 +54,7 @@ body {
 
 .list>.filtrer-note label {
     color: #ffffff;
-    font-size: 90px;
+    font-size: 40px;
     padding: 0 5px;
     cursor: pointer;
 }
@@ -70,11 +70,11 @@ body {
     align-items: center;
     box-shadow: 0px 3px 3px #dbdbdb;
     display: flex;
-    height: 180px;
+    height: 70px;
     justify-content: space-between;
-    padding: 15px 50px;
+    padding: 15px 30px;
     position: relative;
-    font-size: 60px;
+    font-size: 25px;
 }
 
 .nom>a {
@@ -83,26 +83,26 @@ body {
 }
 
 .container h1 {
-    /* margin: 0; */
-    font-size: 70px;
+    margin: 0;
+    /* font-size: 70px; */
 }
 
 .container p {
-font-size: 30px;
+/* font-size: 30px; */
 }
 
 .container h2 {
-    font-size: 50px;
+    /* font-size: 50px; */
     }
     
 
 #recherche {
     border: 0;
-    border-radius: 50px;
-    height:100px;
-    padding-left: 100px;
-    width: 60%;
-    font-size: 50px;
+    border-radius: 25px;
+    height:42px;
+    padding-left: 50px;
+    width: 55%;
+    font-size: 20px;
 }
 
 #recherche:current {
@@ -110,10 +110,10 @@ font-size: 30px;
 }
 
 #serch {
-    font-size: 50px;
-    left: 80px;
+    font-size: 23px;
+    left: 35px;
     position: absolute;
-    top: 100px;
+    top: 50px;
 }
 
 .identify {
@@ -121,18 +121,18 @@ font-size: 30px;
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
-    height: 150px;
+    height: 64px;
     justify-content: center;
-    width: 150px;
+    width: 64px;
     position: absolute;
-    right: 150px;
+    right: 80px;
 
     /* color:#fff!important; */
     /* background-color:#009688!important */
 }
 
 .identify>h1{
-    font-size: 80px;
+    font-size: 40px;
 }
 
 .small-identify {
@@ -140,10 +140,10 @@ font-size: 30px;
     background-color: #dbdbdb;
     border-radius: 50%;
     display: flex;
-    height: 64px;
+    height:45px;
     justify-content: center;
-    width: 64px;
-    margin-right: 40px;
+    width: 45px;
+    margin-right: 20px;
 }
 
 .small-identify>h4{
@@ -158,7 +158,7 @@ font-size: 30px;
 
 
 #person {
-    font-size: 80px;
+    font-size: 33px;
 }
 
 
@@ -185,10 +185,13 @@ font-size: 30px;
     color: #dbdbdb;
 }
 
+.star{
+    margin: 0 0 10px 0;
+}
 
 .star>.filter-star,
 .star>.no-filter-star {
-    font-size: 50px;
+    font-size: 24px;
 }
 
 .star>.s-filter-star,
@@ -198,7 +201,7 @@ font-size: 30px;
 
 /* sidebar */
 .sidebar {
-    width: 600px;
+    width: 300px;
     background-color: #fff;
     z-index: 2;
     position: fixed;
@@ -215,25 +218,25 @@ font-size: 30px;
 
 .button {
     padding: 0;
-    font-size: 75px;
+    font-size: 25px;
     color: #ffffff;
-    height: 150px;
+    height: 70px;
     background-color: #56CBF9;
     width: 100%;
     z-index: 1;
-    padding: 40px 25px;
+    padding: 12px 16px;
 }
 
 .bar-item {
     display: inline-block;
-    padding: 60px 35px;
+    padding: 26px 16px;
     text-decoration: none;
     cursor: pointer;
-    width: 530px;
-    height: 60px;
+    width: 268px;
+    height: 25px;
     color: #ffffff;
     box-shadow: 0px 3px 1px #56CBF9;
-    font-size: 50px;
+    font-size: 22px;
 }
 
 .bar-item:hover {
@@ -253,26 +256,26 @@ font-size: 30px;
 .list {
     /* position: relative; */
     height: 655px;
-    padding-top: 250px;
+    padding-top: 123px;
     display: flex;
     flex-direction: column;
 }
 
 .filtrer-recherche>h1 {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 #arrow {
     color: #ffffff;
-    font-size: 120px;
+    font-size: 50px;
     padding-right: 3%;
 
 }
 
 .info {
-    padding-top: 70px;
-    padding-left: 70px;
+    padding-top: 25px;
+    padding-left: 45px;
     /* height: 430px; */
     display: flex;
     flex-direction: column;
@@ -282,15 +285,15 @@ font-size: 30px;
     text-align: center;
     background: linear-gradient(0deg, rgb(219, 219, 219), rgb(219, 219, 219, 1) 90%, rgb(219, 219, 219, 0));
     color: #56CBF9;
-    height: 650px;
+    height: 306px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.link>p>a {
+.inscrit>p, .link>p>a {
     color: #56CBF9;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #sidebar>a {
@@ -300,13 +303,15 @@ font-size: 30px;
 
 .button1, .button2, .button3 {
     color: #56CBF9;
-    height: 80px;
+    height: 40px;
     background-color: #ffffff;
-    border-radius: 50px;
-    width: 300px;
+    border-radius: 30px;
+    width: 130px;
     border: none;
-    font-size: 36px;
+    font-size: 18px;
     font-weight:bold;
+    margin-top: 50px;
+    align-self: center;
 }
 
 .button2{
@@ -345,9 +350,9 @@ font-size: 30px;
     box-shadow: 0px 3px 3px #dbdbdb;
     /* height: 100px; */
     justify-content: space-between;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
 }
 
 .i-date,
@@ -358,23 +363,26 @@ font-size: 30px;
 
 .i-date>p,
 .i-date>.star {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .check-commentaire{
     display: flex;
 }
 
+.check-commentaire p{
+    margin-right: 20px;
+}
+
 .commentaire p {
-    font-size: 40px;
-    margin: 20px 0;
-    margin-right: 30px;
+    /* font-size: 40px; */
+    margin: 10px 15px;
 }
 
 /*form inscription*/
 .form {
     height: 100vh;
-    padding: 20px 40px;
+    padding: 0px 40px;
     color: #ffffff;
     background: rgb(90, 234, 220);
     background: linear-gradient(160deg, rgba(90, 234, 220, 1) 0%, rgba(93, 253, 203, 1) 18%, rgba(86, 203, 249, 1) 72%, rgba(255, 255, 255, 1) 95%);
@@ -387,8 +395,8 @@ font-size: 30px;
 .form-inscription {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    padding-top: 250px;
+    /* margin-top: 40px; */
+    padding-top: 123px;
     align-items: center;
 }
 
@@ -400,17 +408,18 @@ font-size: 30px;
 
 .con-form input {
     border: none;
-    height:80px;
-    width: 500px;
+    height:35px;
+    width: 230px;
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-bottom: 20px;
-    padding-left: 50px;
-    font-size: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .form-inscription h1 {
-    font-size: 70px;
+    /* font-size: 70px; */
     text-align: center;
     margin-bottom: 70px;
 }
@@ -422,12 +431,12 @@ form{
 
 .form-inscription .con-form {
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .con-form>label {
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 
@@ -437,28 +446,30 @@ form{
     align-self: center;
 }
 
-#eye1 {
+#eye1, #eye2 {
     color: #56CBF9;
-    font-size: 55px;
-    right: 25px;
+    font-size: 23px;
+    right: 20px;
     position: absolute;
+    cursor: pointer;
 }
 
 .form-inscription a {
     color: #ffffff;
     align-self: center;
-    font-size: 40px;
+    font-size: 18px;
 }
 
-.form-inscription #eye1, .container-mdp #eye1{
-    top: 65px;
+.form-inscription #eye1, .container-mdp #eye1,
+.form-inscription #eye2, .container-mdp #eye2 {
+    top: 35px;
 }
 
 /* form  mdp oublie et nouveau*/
 .container-mdp {
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 250px;
+    padding-top: 123px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -467,11 +478,12 @@ form{
 .container-mdp>.con-form>input {
     border: solid 1px;
     border-color: #56CBF9;
+    cursor: pointer;
 }
 
 .container-mdp>h1 {
     margin-top: 120px;
-    font-size: 70px;
+    /* font-size: 30px; */
     text-align: center;
 }
 
@@ -487,10 +499,23 @@ form{
 /* commentaires */
 .list-commentaire {
     box-shadow: 0px 3px 3px #dbdbdb;
-    height: 270px;
+    /* height: 270px; */
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.list-commentaire a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-commentaire .button3 {
+    width: 50px;
+    margin-top: 0;
 }
 
 /* form-checkbox */
@@ -546,7 +571,7 @@ form{
 
 .container-mdp label {
     align-self: baseline;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .container-mdp>a {

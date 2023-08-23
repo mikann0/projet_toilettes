@@ -17,15 +17,15 @@
             </tr>
             <tr>
                 <th>En_panne</th>
-                <td>{{ comment.enPanne }}</td>
+                <td>{{ comment.en_panne }}</td>
             </tr>
             <tr>
                 <th>N_existe__plus</th>
-                <td>{{ comment.nExistePlus }}</td>
+                <td>{{ comment.n_existe__plus }}</td>
             </tr>
             <tr>
                 <th>Acces_handicape</th>
-                <td>{{ comment.accesHandicape }}</td>
+                <td>{{ comment.acces_handicape }}</td>
             </tr>
             <tr>
                 <th>Commentaire</th>
@@ -33,11 +33,11 @@
             </tr>
             <tr>
                 <th>Date_commentaire</th>
-                <td>{{ comment.dateCommentaire ? comment.dateCommentaire|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ comment.date_commentaire|date('Y-m-d')}}</td>
             </tr>
             <tr>
                 <th>Id_toilette</th>
-                <td>{{ comment.idToilette }}</td>
+                <td>{{ comment.id_toilette }}</td>
             </tr>
         </tbody>
     </table>

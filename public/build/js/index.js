@@ -1,62 +1,57 @@
 function openSidebar() {
     document.getElementById("sidebar").style.display = "block";
-    }
+}
 function closeSidebar() {
     document.getElementById("sidebar").style.display = "none";
-    }
- 
-function showPasseword(){    
-     var inputPassword = document.getElementById("#inputPassword1");
-     var eye1 = document.getElementById("#eye1")
-     if(inputPassword.type === "password"){
+}
+
+function togglePassword1() {
+    const inputPassword = document.getElementById("inputPassword1");
+    const eye1 = document.getElementById("eye1");
+    if (inputPassword.type === "password") {
+        console.log("input has password");
         inputPassword.type = "text";
-        eye1.icon = "mdi:eye-off"
+        eye1.classList.remove('fa-eye');
+        eye1.classList.add('fa-eye-slash');
     } else {
-        inputPassword.type="password";
-        eye1.icon = "mdi:eye"
+        console.log("input has no password");
+        inputPassword.type = "password";
+        eye1.classList.remove('fa-eye-slash');
+        eye1.classList.add('fa-eye');
     }
-    } 
+}
 
-    function activateTextarea() {
-        const textArea = document.getElementById("commentaire");
-        if (!check) {
-          textArea.classList.remove("inactive");
-          textArea.classList.add("active");
-          textArea.disabled = false;
-          textArea.focus();
-          
-        } else {
-          textArea.classList.add("inactive");
-          textArea.classList.remove("active");
-          textArea.disabled = true;
-        }
-        check = !check;
-  
-      }
+function togglePassword2() {
+    const inputPassword = document.getElementById("inputPassword2");
+    const eye2 = document.getElementById("eye2");
+    if (inputPassword.type === "password") {
+        console.log("input has password");
+        inputPassword.type = "text";
+        eye2.classList.remove('fa-eye');
+        eye2.classList.add('fa-eye-slash');
+    } else {
+        console.log("input has no password");
+        inputPassword.type = "password";
+        eye2.classList.remove('fa-eye-slash');
+        eye2.classList.add('fa-eye');
+    }
+}
 
-      const radioButtons = document.getElementsByName('review');
 
-radioButtons.forEach(radioButton => {
-    radioButton.addEventListener('change', () => {
-        const selectedOption = document.querySelector('input[name="review"]:checked').value;
-        sendDataToBackend(selectedOption);
-    });
-});
+function activateTextarea() {
+    const textArea = document.getElementById("commentaire");
+    if (!check) {
+        textArea.classList.remove("inactive");
+        textArea.classList.add("active");
+        textArea.disabled = false;
+        textArea.focus();
 
-function sendDataToBackend(option) {
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', '/process-radio', true); // バックエンドのエンドポイントを指定
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    } else {
+        textArea.classList.add("inactive");
+        textArea.classList.remove("active");
+        textArea.disabled = true;
+    }
+    check = !check;
 
-  xhr.onreadystatechange = function() {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-          if (xhr.status === 200) {
-              console.log('Data sent successfully');
-          } else {
-              console.error('Failed to send data');
-          }
-      }
-  };
+}
 
-  const data = 'selectedOption=' + encodeURIComponent(option);
-  xhr.send(data);}

@@ -26,11 +26,6 @@ class CommentType extends AbstractType
                 'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
                 'label_attr' => ['label' => 'accès handicapé']
             ])
-            ->add('autre',CheckboxType::class, [
-                'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
-                'label_attr' => ['label' => 'autre'],
-                'attr' => ['onchange' => 'activateTextarea()']
-            ])
             ->add('commentaire',null, [
                 'attr'  =>  ['class' => 'form-inactive','id' => 'commentaire', 'disabled' => 'true' ],
             ])

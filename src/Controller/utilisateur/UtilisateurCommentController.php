@@ -3,6 +3,7 @@
 namespace App\Controller\utilisateur;
 
 use App\Entity\Comment;
+use App\Entity\Utilisateur;
 use App\Form\CommentType;
 use App\Repository\CommentRepository;
 use App\Repository\ToilettesRepository;
@@ -66,37 +67,54 @@ class UtilisateurCommentController extends AbstractController
 
             return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
         }
-
-        return $this->render('utilisateur/comment/new.html.twig', [
-            'comment' => $comment,
-            'form' => $form,
-        ]);
     }
 
-    #[Route('/{id}', name: 'app_comment_show', methods: ['GET'])]
-    public function show(Comment $comment): Response
+    //     return $this->render('utilisateur/comment/new.html.twig', [
+    //         'comment' => $comment,
+    //         'form' => $form,
+    //     ]);
+    // }
+
+    // #[Route('/{id}', name: 'app_comment_show', methods: ['GET'])]
+    // public function show(Comment $comment): Response
+    // {
+    //     return $this->render('utilisateur/comment/show.html.twig', [
+    //         'comment' => $comment,
+    //     ]);
+    // }
+
+    #[Route('/{tid}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
+    public function edit($tid, Request $request, EntityManagerInterface $entityManager, CommentRepository $commentRepository, Security $security): Response
     {
-        return $this->render('utilisateur/comment/show.html.twig', [
-            'comment' => $comment,
-        ]);
-    }
+        
+        
+        $token = $security->getToken();
+        if ($token !== null) {
+            $this->logger->log(LogLevel::WARNING, "token=" . $token);
+            $utilisateur = $token->getUser();
+            if ($utilisateur instanceof Utilisateur) {
+                $userId = $utilisateur->getId();
+                $comment = $commentRepository->findOneBy(['id_toilette' => $tid, 'id_utilisateur' => $userId]);
 
-    #[Route('/{id}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, Comment $comment, EntityManagerInterface $entityManager): Response
-    {
-        $form = $this->createForm(CommentType::class, $comment);
-        $form->handleRequest($request);
+                $form = $this->createForm(CommentType::class, $comment);
+                $form->handleRequest($request);
+        
+                if ($form->isSubmitted() && $form->isValid()) {
+                    $entityManager->flush();
+        
+                    return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
+                }
+        
+                return $this->render('utilisateur/comment/edit.html.twig', [
+                    'comment' => $comment,
+                    'form' => $form,
+                ]);
+    
+            }
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->flush();
-
-            return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->render('utilisateur/comment/edit.html.twig', [
-            'comment' => $comment,
-            'form' => $form,
-        ]);
+
     }
 
     #[Route('/{id}', name: 'app_comment_delete', methods: ['POST'])]
