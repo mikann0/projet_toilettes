@@ -36,11 +36,11 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 30)]
     private ?string $nom;
 
-    #[ORM\Column(type: Types::DATETIME_IMMUTABLE)]
-    private ?\DateTimeInterface $date_ins;
+    #[ORM\Column(type: Types::DATETIME_IMMUTABLE, name: "date_ins")]
+    private ?\DateTimeInterface $dateIns;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $last_login;
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true, name : "last_login")]
+    private ?\DateTimeInterface $lastLogin;
 
     // #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
     // private Collection $comments;
@@ -48,7 +48,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     public function __construct()
     {
         // $this->comments = new ArrayCollection();
-       $this->date_ins = new \DateTimeImmutable();
+       $this->dateIns = new \DateTimeImmutable();
         $this->addRole("ROLE_UTILISATEUR");
     }
 
@@ -135,22 +135,22 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getDateIns(): ?\DateTimeInterface
     {
-        return $this->date_ins;
+        return $this->dateIns;
     }
 
     public function setDateIns(\DateTimeInterface $date_ins)
     {
-        $this->date_ins = $date_ins;
+        $this->dateIns = $date_ins;
     }
 
     public function getLastLogin(): ?\DateTimeInterface
     {
-        return $this->last_login;
+        return $this->lastLogin;
     }
 
     public function setLastLogin(\DateTimeInterface $last_login)
     {
-        $this->last_login = $last_login;
+        $this->lastLogin = $last_login;
     }
 
     /**
@@ -165,7 +165,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     {
         if (!$this->comments->contains($comment)) {
             $this->comments->add($comment);
-            $comment->setid_utilisateur($this);
+            $comment->setIdUtilisateur($this);
         }
     }
 
@@ -173,8 +173,8 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     {
         if ($this->comments->removeElement($comment)) {
             // set the owning side to null (unless already changed)
-            if ($comment->getid_utilisateur() === $this) {
-                $comment->setid_utilisateur(null);
+            if ($comment->getIdUtilisateur() === $this) {
+                $comment->setIdUtilisateur(null);
             }
         }
     }

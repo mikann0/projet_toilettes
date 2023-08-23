@@ -27,8 +27,8 @@
 			<div class="list-commentaire">
 				<a href="{{ path('app_comment_edit',{'cid':comment.id})}}">
 					<div class="i-date">
-						<h2>{{ toiletById[comment.id_toilette].nom }}</h2>
-						<p>{{ comment.date_commentaire|date('Y-m-d')}}</p>
+						<h2>{{ toiletById[comment.idToilette].nom }}</h2>
+						<p>{{ comment.dateCommentaire|date('Y-m-d')}}</p>
 					</div>
 					<div
 						class="star">
@@ -40,13 +40,13 @@
 						<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
 					</div>
 					<div class="check-commentaire">
-						{% if comment.en_panne == 1 %}
+						{% if comment.enPanne == 1 %}
 							<p>en panne</p>
 						{% endif %}
-						{% if comment.n_existe__plus == 1 %}
+						{% if comment.nExistePlus == 1 %}
 							<p>n'existe plus</p>
 						{% endif %}
-						{% if comment.acces_handicape == 1 %}
+						{% if comment.accesHandicape == 1 %}
 							<p>n'existe plus</p>
 						{% endif %}
 					</div>

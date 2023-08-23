@@ -18,27 +18,27 @@ class Comment
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $note;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true)]
-    private ?int $en_panne;
+    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "en_panne")]
+    private ?int $enPanne;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true)]
-    private ?int $n_existe__plus;
+    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "n_existe__plus")]
+    private ?int $nExistePlus;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true)]
-    private ?int $acces_handicape;
+    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "acces_handicape")]
+    private ?int $accesHandicape;
 
     #[ORM\Column(length: 150, nullable: true)]
     private ?string $commentaire;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date_commentaire;
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, name: "date_commentaire")]
+    private ?\DateTimeInterface $dateCommentaire;
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Utilisateur $id_utilisateur;
+    #[ORM\JoinColumn(nullable: false, name: "id_utilisateur_id")]
+    private ?Utilisateur $idUtilisateur;
 
-    #[ORM\Column(length: 20)]
-    private ?string $id_toilette;
+    #[ORM\Column(length: 20, name: "id_toilette")]
+    private ?string $idToilette;
 
     public function getId(): ?int
     {
@@ -55,34 +55,34 @@ class Comment
         $this->note = $note;
     }
 
-    public function geten_panne(): ?int
+    public function getEnPanne(): ?int
     {
-        return $this->en_panne;
+        return $this->enPanne;
     }
 
-    public function seten_panne(?int $en_panne)
+    public function setEnPanne(?int $en_panne)
     {
-        $this->en_panne = $en_panne;
+        $this->enPanne = $en_panne;
     }
 
-    public function getn_existe__plus(): ?int
+    public function getNExistePlus(): ?int
     {
-        return $this->n_existe__plus;
+        return $this->nExistePlus;
     }
 
-    public function setn_existe__plus(?int $n_existe__plus)
+    public function setNExistePlus(?int $n_existe__plus)
     {
-        $this->n_existe__plus = $n_existe__plus;
+        $this->nExistePlus = $n_existe__plus;
     }
 
-    public function getacces_handicape(): ?int
+    public function getAccesHandicape(): ?int
     {
-        return $this->acces_handicape;
+        return $this->accesHandicape;
     }
 
-    public function setacces_handicape(?int $acces_handicape)
+    public function setAccesHandicape(?int $acces_handicape)
     {
-        $this->acces_handicape = $acces_handicape;
+        $this->accesHandicape = $acces_handicape;
     }
 
     public function getCommentaire(): ?string
@@ -95,33 +95,33 @@ class Comment
         $this->commentaire = $commentaire;
     }
 
-    public function getdate_commentaire(): ?\DateTimeInterface
+    public function getDateCommentaire(): ?\DateTimeInterface
     {
-        return $this->date_commentaire;
+        return $this->dateCommentaire;
     }
 
-    public function setdate_commentaire(\DateTimeInterface $date_commentaire)
+    public function setDateCommentaire(\DateTimeInterface $dateCommentaire)
     {
-        $this->date_commentaire = $date_commentaire;
+        $this->dateCommentaire = $dateCommentaire;
     }
 
-    public function getid_utilisateur(): ?Utilisateur
+    public function getIdUtilisateur(): ?Utilisateur
     {
-        return $this->id_utilisateur;
+        return $this->idUtilisateur;
     }
 
-    public function setid_utilisateur(?Utilisateur $id_utilisateur)
+    public function setIdUtilisateur(?Utilisateur $id_utilisateur)
     {
-        $this->id_utilisateur = $id_utilisateur;
+        $this->idUtilisateur = $id_utilisateur;
     }
 
-    public function getid_toilette(): ?string
+    public function getidToilette(): ?string
     {
-        return $this->id_toilette;
+        return $this->idToilette;
     }
 
-    public function setid_toilette(string $id_toilette)
+    public function setIdToilette(string $id_toilette)
     {
-        $this->id_toilette = $id_toilette;
+        $this->idToilette = $id_toilette;
     }
 }

@@ -38,10 +38,10 @@ class UtilisateurCommentController extends AbstractController
 
             /** @var Utilisateur $utilisateur */
             $utilisateur = $token->getUser();
-            $comments = $commentRepository->findBy(["id_utilisateur"=>$utilisateur->getId()]);
+            $comments = $commentRepository->findBy(["idUtilisateur"=>$utilisateur->getId()]);
             $toiletById = [];
             foreach ($comments as $comment) {
-                $toiletId = $comment->getid_toilette();
+                $toiletId = $comment->getIdToilette();
                 $toilet = $this->toilettesRepository->uneToilette($toiletId);
                 $toiletById[$toiletId] = $toilet;
             }
@@ -94,7 +94,7 @@ class UtilisateurCommentController extends AbstractController
             $utilisateur = $token->getUser();
             if ($utilisateur instanceof Utilisateur) {
                 $userId = $utilisateur->getId();
-                $comment = $commentRepository->findOneBy(['id_toilette' => $tid, 'id_utilisateur' => $userId]);
+                $comment = $commentRepository->findOneBy(['idToilette' => $tid, 'idUtilisateur' => $userId]);
 
                 $form = $this->createForm(CommentType::class, $comment);
                 $form->handleRequest($request);

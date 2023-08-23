@@ -16,8 +16,8 @@ class UtilisateurType extends AbstractType
             ->add('roles')
             ->add('password')
             ->add('nom')
-            ->add('date_ins')
-            ->add('last_login')
+            ->add('dateIns')
+            ->add('lastLogin')
         ;
     }
 
