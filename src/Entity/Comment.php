@@ -18,14 +18,14 @@ class Comment
     #[ORM\Column(type: Types::SMALLINT)]
     private ?int $note;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "en_panne")]
-    private ?int $enPanne;
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true, name: "en_panne")]
+    private ?bool $enPanne;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "n_existe__plus")]
-    private ?int $nExistePlus;
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true, name: "n_existe__plus")]
+    private ?bool $nExistePlus;
 
-    #[ORM\Column(type: Types::SMALLINT, nullable: true, name: "acces_handicape")]
-    private ?int $accesHandicape;
+    #[ORM\Column(type: Types::BOOLEAN, nullable: true, name: "acces_handicape")]
+    private ?bool $accesHandicape;
 
     #[ORM\Column(length: 150, nullable: true)]
     private ?string $commentaire;
@@ -60,32 +60,32 @@ class Comment
         $this->note = $note;
     }
 
-    public function getEnPanne(): ?int
+    public function getEnPanne(): ?bool
     {
         return $this->enPanne;
     }
 
-    public function setEnPanne(?int $en_panne)
+    public function setEnPanne(?bool $en_panne)
     {
         $this->enPanne = $en_panne;
     }
 
-    public function getNExistePlus(): ?int
+    public function getNExistePlus(): ?bool
     {
         return $this->nExistePlus;
     }
 
-    public function setNExistePlus(?int $n_existe__plus)
+    public function setNExistePlus(?bool $n_existe__plus)
     {
         $this->nExistePlus = $n_existe__plus;
     }
 
-    public function getAccesHandicape(): ?int
+    public function getAccesHandicape(): ?bool
     {
         return $this->accesHandicape;
     }
 
-    public function setAccesHandicape(?int $acces_handicape)
+    public function setAccesHandicape(?bool $acces_handicape)
     {
         $this->accesHandicape = $acces_handicape;
     }

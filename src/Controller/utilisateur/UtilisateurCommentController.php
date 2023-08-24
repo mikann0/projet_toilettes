@@ -7,6 +7,7 @@ use App\Entity\Utilisateur;
 use App\Form\CommentType;
 use App\Repository\CommentRepository;
 use App\Repository\ToilettesRepository;
+use DateTime;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LogLevel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -57,16 +58,15 @@ class UtilisateurCommentController extends AbstractController
     #[Route('/{tid}/new', name: 'app_comment_new', methods: ['GET', 'POST'])]
     public function new($tid, Request $request, EntityManagerInterface $entityManager, Security $security): Response
     {
-
+        
         $token = $security->getToken();
         if ($token !== null) {
             $this->logger->log(LogLevel::WARNING, "token=" . $token);
+            $uneToilette = $this->toilettesRepository->uneToilette($tid);
 
             /** @var Utilisateur $utilisateur */
             $utilisateur = $token->getUser();
             if ($utilisateur instanceof Utilisateur) {
-                $userId = $utilisateur->getId();
-
                 $comment = new Comment();
                 $comment->setIdToilette($tid);
                 $comment->setIdUtilisateur($utilisateur);
@@ -83,6 +83,7 @@ class UtilisateurCommentController extends AbstractController
                 return $this->render('utilisateur/comment/new.html.twig', [
                     'comment' => $comment,
                     'utilisateur' => $utilisateur,
+                    'toilette' => $uneToilette,
                     'form' => $form,
                 ]);
             }
@@ -115,7 +116,9 @@ class UtilisateurCommentController extends AbstractController
             if ($utilisateur instanceof Utilisateur) {
                 $userId = $utilisateur->getId();
                 $comment = $commentRepository->findOneBy(['idToilette' => $tid, 'idUtilisateur' => $userId]);
-
+                $comment->setDateCommentaire(new DateTime());
+                
+                $uneToilette = $this->toilettesRepository->uneToilette($tid);
                 $form = $this->createForm(CommentType::class, $comment);
                 $form->handleRequest($request);
 
@@ -129,6 +132,7 @@ class UtilisateurCommentController extends AbstractController
                     'comment' => $comment,
                     'utilisateur' => $utilisateur,
                     'form' => $form,
+                    'toilette' => $uneToilette,
                 ]);
             }
         }
