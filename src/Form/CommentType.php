@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\CallbackTransformer;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -15,41 +16,26 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('note')
-            ->add('enPanne',ChoiceType::class, [
-                'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
-                'label_attr' => ['label' => 'en panne'],
-                'choices' => [
-                    'No' => 0,
-                    'Yes' => 1,
-                ],
-                'expanded' => true,
-                'multiple' => false,
+            ->add('note',null, [
+                'row_attr'  =>  ['class' => 'filtrer_note', 'id' => ''],
             ])
-            ->add('nExistePlus',ChoiceType::class, [
-                'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
-                'label_attr' => ['label' => 'n’existe plus'],
-                'choices' => [
-                    'No' => 0,
-                    'Yes' => 1,
-                ],
-                'expanded' => true,
-                'multiple' => false,
+            ->add('enPanne',CheckboxType::class, [
+                'row_attr'  =>  ['class' => 'form-checkbox', 'id' => 'id'],
+                'required' => false,
             ])
-            ->add('accesHandicape',ChoiceType::class, [
+            ->add('nExistePlus',CheckboxType::class, [
                 'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
-                'label_attr' => ['label' => 'accès handicapé'],
-                'choices' => [
-                    'No' => 0,
-                    'Yes' => 1,
-                ],
-                'expanded' => true,
-                'multiple' => false,
-            ])
-            ->add('commentaire',null, [
+                'required' => false,
+                ])
+            ->add('accesHandicape',CheckboxType::class, [
+                'row_attr'  =>  ['class' => 'form-checkbox', 'id' => ''],
+                'required' => false,
+                ])
+            ->add('commentaire',TextareaType::class, [
                 'attr'  =>  ['class' => 'form-inactive','id' => 'commentaire', 'disabled' => 'true' ],
-            ])
-            ->add('dateCommentaire')
+                'required' => false,
+                ])
+            // ->add('dateCommentaire')
            // ->add('id_toilette')
            // ->add('id_utilisateur')
         ;

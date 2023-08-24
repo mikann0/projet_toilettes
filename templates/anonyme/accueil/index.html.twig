@@ -20,16 +20,16 @@
 			<iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
 		</div>
 	</div>
-		<div class="list">
+	<div class="list">
 		<div class="filtrer-note"></div>
-			{% for toilette in toilettes %}
+		{% for toilette in toilettes %}
+			<a href="{{ path('app_info',{'tid':toilette.uid})}}">
 				<div class="nom">
-					<a href="{{ path('app_info',{'tid':toilette.uid})}}">
-						<p>{{toilette.nom}}</p>
-					</a>
+					<p>{{toilette.nom}}</p>
 				</div>
-			{% endfor %}
-		</div>
+			</a>
+		{% endfor %}
+	</div>
 	{# <div class="gra"></div>  #}
-		
+
 {% endblock %}

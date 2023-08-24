@@ -42,12 +42,12 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true, name : "last_login")]
     private ?\DateTimeInterface $lastLogin;
 
-    // #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
-    // private Collection $comments;
+    #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
+    private Collection $comments;
 
     public function __construct()
     {
-        // $this->comments = new ArrayCollection();
+        $this->comments = new ArrayCollection();
        $this->dateIns = new \DateTimeImmutable();
         $this->addRole("ROLE_UTILISATEUR");
     }

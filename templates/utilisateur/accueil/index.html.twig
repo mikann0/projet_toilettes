@@ -8,9 +8,9 @@
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>
 		</button>
-		 {% if is_granted('ROLE_MODERATION') %}
-          <a href="{{path('app_moderation_controller')}}"  class="bar-item">MODERATION</a>
-         {% endif %}
+		{% if is_granted('ROLE_MODERATION') %}
+			<a href="{{path('app_moderation_controller')}}" class="bar-item">MODERATION</a>
+		{% endif %}
 		<a href="{{path('app_comment_index')}}" class="bar-item">Voir tous vos commentaires</a>
 		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
 		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
@@ -32,21 +32,21 @@
 			<input id="review03" type="radio" name="review" value="3"><label for="review03">★</label>
 			<input id="review02" type="radio" name="review" value="2"><label for="review02">★</label>
 			<input id="review01" type="radio" name="review" value="1"><label for="review01">★</label>
-			<input id="review00" type="radio" name="review" value="0"><label for="review00" style="text-indent:-999px; width:50px";>★</label>
+			<input id="review00" type="radio" name="review" value="0"><label for="review00" style="text-indent:-999px; width:50px" ;>★</label>
 		</form>
 		{% for toilette in toilettes %}
-			<div class="nom">
-				<a href="{{ path('app_utilisateur_info',{'tid':toilette.uid})}}">
+			<a href="{{ path('app_utilisateur_info',{'tid':toilette.uid})}}">
+				<div class="nom">
 					<p>{{toilette.nom}}</p>
-				</a>
-				<div class="star">
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					<div class="star">
+						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+					</div>
 				</div>
-			</div>
+			</a>
 		{% endfor %}
 
 		<!-- <div class="gra"></div> -->

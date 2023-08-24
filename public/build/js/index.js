@@ -39,19 +39,17 @@ function togglePassword2() {
 
 
 function activateTextarea() {
-    const textArea = document.getElementById("commentaire");
-    if (!check) {
-        textArea.classList.remove("inactive");
-        textArea.classList.add("active");
+    const textArea = document.getElementById("comment_commentaire");
+    if (textArea.disabled) {
+        // textArea.classList.remove("inactive");
+        // textArea.classList.add("active");
         textArea.disabled = false;
         textArea.focus();
 
     } else {
-        textArea.classList.add("inactive");
-        textArea.classList.remove("active");
+        // textArea.classList.add("inactive");
+        // textArea.classList.remove("active");
         textArea.disabled = true;
     }
-    check = !check;
-
 }
 

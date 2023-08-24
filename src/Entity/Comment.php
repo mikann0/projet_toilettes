@@ -40,6 +40,11 @@ class Comment
     #[ORM\Column(length: 20, name: "id_toilette")]
     private ?string $idToilette;
 
+    public function __construct()
+    {
+       $this->dateCommentaire = new \DateTime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;

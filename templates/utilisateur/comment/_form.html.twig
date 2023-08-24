@@ -1,4 +1,39 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+<div class="info">
+<div class="nom-star">
+        <p>Nom</p>
+        <div class="star" style="visibility:hidden" ;>
+          <iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+          <iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+          <iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+          <iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+          <iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+        </div>
+      </div>
+      <h1>Pêcherie</h1>
+      <p>Note</p>
+      <div class="filtrer-note">
+        <input id="review01" type="radio" name="review"><label for="review01">★</label>
+        <input id="review02" type="radio" name="review"><label for="review02">★</label>
+        <input id="review03" type="radio" name="review"><label for="review03">★</label>
+        <input id="review04" type="radio" name="review"><label for="review04">★</label>
+        <input id="review05" type="radio" name="review"><label for="review05">★</label>
+      </div>
+	{{ form_start(form) }}
+	{{ form_row(form.note) }}
+	{{ form_row(form.enPanne,{
+            label: 'en panne'
+        }) }}
+	{{ form_row(form.nExistePlus,{
+            label: 'n\'existe plus'
+        }) }}   
+    {{ form_row(form.accesHandicape,{
+            label: 'accàs handicapé'
+        }) }}   
+            <div class="form-checkbox">
+          <label for="check4">autre</label>
+          <input type="checkbox" id="check4" onchange=activateTextarea()>
+        </div>
+    {{ form_widget(form.commentaire) }}   
+</div>
+<button class="btn button2">{{ button_label|default('valider') }}</button>
 {{ form_end(form) }}

@@ -38,7 +38,7 @@ class UtilisateurCommentController extends AbstractController
 
             /** @var Utilisateur $utilisateur */
             $utilisateur = $token->getUser();
-            $comments = $commentRepository->findBy(["idUtilisateur"=>$utilisateur->getId()]);
+            $comments = $commentRepository->findBy(["idUtilisateur" => $utilisateur->getId()]);
             $toiletById = [];
             foreach ($comments as $comment) {
                 $toiletId = $comment->getIdToilette();
@@ -54,26 +54,41 @@ class UtilisateurCommentController extends AbstractController
         }
     }
 
-    #[Route('/new', name: 'app_comment_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    #[Route('/{tid}/new', name: 'app_comment_new', methods: ['GET', 'POST'])]
+    public function new($tid, Request $request, EntityManagerInterface $entityManager, Security $security): Response
     {
-        $comment = new Comment();
-        $form = $this->createForm(CommentType::class, $comment);
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($comment);
-            $entityManager->flush();
+        $token = $security->getToken();
+        if ($token !== null) {
+            $this->logger->log(LogLevel::WARNING, "token=" . $token);
 
-            return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
+            /** @var Utilisateur $utilisateur */
+            $utilisateur = $token->getUser();
+            if ($utilisateur instanceof Utilisateur) {
+                $userId = $utilisateur->getId();
+
+                $comment = new Comment();
+                $comment->setIdToilette($tid);
+                $comment->setIdUtilisateur($utilisateur);
+                $form = $this->createForm(CommentType::class, $comment);
+                $form->handleRequest($request);
+
+                if ($form->isSubmitted() && $form->isValid()) {
+                    $entityManager->persist($comment);
+                    $entityManager->flush();
+
+                    return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
+                }
+
+                return $this->render('utilisateur/comment/new.html.twig', [
+                    'comment' => $comment,
+                    'utilisateur' => $utilisateur,
+                    'form' => $form,
+                ]);
+            }
         }
     }
 
-    //     return $this->render('utilisateur/comment/new.html.twig', [
-    //         'comment' => $comment,
-    //         'form' => $form,
-    //     ]);
-    // }
 
     // #[Route('/{id}', name: 'app_comment_show', methods: ['GET'])]
     // public function show(Comment $comment): Response
@@ -84,10 +99,15 @@ class UtilisateurCommentController extends AbstractController
     // }
 
     #[Route('/{tid}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
-    public function edit($tid, Request $request, EntityManagerInterface $entityManager, CommentRepository $commentRepository, Security $security): Response
-    {
-        
-        
+    public function edit(
+        $tid,
+        Request $request,
+        EntityManagerInterface $entityManager,
+        CommentRepository $commentRepository,
+        Security $security
+    ): Response {
+
+
         $token = $security->getToken();
         if ($token !== null) {
             $this->logger->log(LogLevel::WARNING, "token=" . $token);
@@ -98,29 +118,26 @@ class UtilisateurCommentController extends AbstractController
 
                 $form = $this->createForm(CommentType::class, $comment);
                 $form->handleRequest($request);
-        
+
                 if ($form->isSubmitted() && $form->isValid()) {
                     $entityManager->flush();
-        
+
                     return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
                 }
-        
+
                 return $this->render('utilisateur/comment/edit.html.twig', [
                     'comment' => $comment,
+                    'utilisateur' => $utilisateur,
                     'form' => $form,
                 ]);
-    
             }
-
         }
-
-
     }
 
     #[Route('/{id}', name: 'app_comment_delete', methods: ['POST'])]
     public function delete(Request $request, Comment $comment, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$comment->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $comment->getId(), $request->request->get('_token'))) {
             $entityManager->remove($comment);
             $entityManager->flush();
         }

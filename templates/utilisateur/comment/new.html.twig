@@ -1,11 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Comment{% endblock %}
+{% block title %}New Comment
+{% endblock %}
 
 {% block body %}
-    <h1>Create new Comment</h1>
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="{{path('app_comment_index')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="{{path('app_utilisateur_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<h1>{{utilisateur.nom|first|upper}}</h1>
+		</div>
+	</div>
+	<div class="container">
+		{{ include('utilisateur/comment/_form.html.twig') }}
 
-    {{ include('comment/_form.html.twig') }}
-
-    <a href="{{ path('app_comment_index') }}">back to list</a>
+		{# <a href="{{ path('app_comment_index') }}">back to list</a> #}
+	</div>
 {% endblock %}
