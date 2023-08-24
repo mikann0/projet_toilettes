@@ -31,7 +31,6 @@ class AccueilController extends AbstractController
         $token = $security->getToken();
         $searchValue = $request->query->get('searchValue');
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
             $utilisateur = $token->getUser();
             return $this->render('utilisateur/accueil/index.html.twig', [
                 'searchValue' => $searchValue,

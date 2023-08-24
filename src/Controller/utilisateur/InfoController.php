@@ -33,14 +33,18 @@ class InfoController extends AbstractController
         $uneToilette = $this->toilettesRepository->uneToilette($tid);
         $token = $security->getToken();
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
             $utilisateur = $token->getUser();
             $comments = $commentRepository->findBy(['idToilette' => $tid]);
+            if ($utilisateur instanceof Utilisateur) {
+                $userId = $utilisateur->getId();
+                $utilisateurComment = $commentRepository->findOneBy(['idToilette' => $tid, 'idUtilisateur' => $userId]);
+            }
 
             return $this->render('utilisateur/info/index.html.twig', [
                 'toilette' => $uneToilette,
                 'comments' => $comments,
                 'utilisateur' => $utilisateur,
+                'userComment' => $utilisateurComment,
             ]);
         }
     }

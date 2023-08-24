@@ -35,8 +35,6 @@ class UtilisateurCommentController extends AbstractController
     {
         $token = $security->getToken();
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
-
             /** @var Utilisateur $utilisateur */
             $utilisateur = $token->getUser();
             $comments = $commentRepository->findBy(["idUtilisateur" => $utilisateur->getId()]);
@@ -61,7 +59,6 @@ class UtilisateurCommentController extends AbstractController
         
         $token = $security->getToken();
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
             $uneToilette = $this->toilettesRepository->uneToilette($tid);
 
             /** @var Utilisateur $utilisateur */
@@ -91,14 +88,6 @@ class UtilisateurCommentController extends AbstractController
     }
 
 
-    // #[Route('/{id}', name: 'app_comment_show', methods: ['GET'])]
-    // public function show(Comment $comment): Response
-    // {
-    //     return $this->render('utilisateur/comment/show.html.twig', [
-    //         'comment' => $comment,
-    //     ]);
-    // }
-
     #[Route('/{tid}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
     public function edit(
         $tid,
@@ -111,7 +100,6 @@ class UtilisateurCommentController extends AbstractController
 
         $token = $security->getToken();
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
             $utilisateur = $token->getUser();
             if ($utilisateur instanceof Utilisateur) {
                 $userId = $utilisateur->getId();
@@ -139,9 +127,9 @@ class UtilisateurCommentController extends AbstractController
     }
 
     #[Route('/{cid}', name: 'app_comment_delete', methods: ['POST'])]
-    public function delete($cid, Request $request, EntityManagerInterface $entityManager, 
-    CommentRepository $commentRepository): Response
-    {   
+    public function delete($cid, Request $request, EntityManagerInterface $entityManager,
+        CommentRepository $commentRepository): Response
+    {
 
         $comment = $commentRepository->findOneBy(["id" => $cid]);
         if ($this->isCsrfTokenValid('delete' . $cid, $request->request->get('_token'))) {

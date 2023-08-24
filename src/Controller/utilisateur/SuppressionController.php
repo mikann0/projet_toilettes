@@ -26,7 +26,6 @@ class SuppressionController extends AbstractController
     {
         $token = $security->getToken();
         if ($token !== null) {
-            $this->logger->log(LogLevel::WARNING, "token=" . $token);
             $utilisateur = $token->getUser();
             return $this->render('utilisateur/suppression/index.html.twig', [
                 'utilisateur' => $utilisateur,
