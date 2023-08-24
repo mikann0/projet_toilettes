@@ -34,12 +34,9 @@ class ToilettesRepository
         } else {
             $searchResult = array_filter($this->toilettes, function ($item) use ($searchValue) {
                 $isCodePostal = isset($item['codepost']) && $item['codepost'] == $searchValue;
-                $isNom = isset($item['nom']) && strpos(strtolower($item['nom']), strtolower($searchValue)) !== false;
+                $isNom = isset($item['nom']) && str_contains(strtolower($item['nom']), strtolower($searchValue));
                 $isAdresse = isset($item['adresse']) &&
-                    strpos(
-                        strtolower($item['adresse']),
-                        strtolower($searchValue)
-                    ) !== false;
+                    str_contains(strtolower($item['adresse']), strtolower($searchValue));
                 return $isCodePostal || $isNom || $isAdresse;
             });
         }
