@@ -88,9 +88,9 @@ class UtilisateurCommentController extends AbstractController
     }
 
 
-    #[Route('/{tid}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
+    #[Route('/{cid}/edit', name: 'app_comment_edit', methods: ['GET', 'POST'])]
     public function edit(
-        $tid,
+        $cid,
         Request $request,
         EntityManagerInterface $entityManager,
         CommentRepository $commentRepository,
@@ -101,28 +101,24 @@ class UtilisateurCommentController extends AbstractController
         $token = $security->getToken();
         if ($token !== null) {
             $utilisateur = $token->getUser();
-            if ($utilisateur instanceof Utilisateur) {
-                $userId = $utilisateur->getId();
-                $comment = $commentRepository->findOneBy(['idToilette' => $tid, 'idUtilisateur' => $userId]);
-                $comment->setDateCommentaire(new DateTime());
-                
-                $uneToilette = $this->toilettesRepository->uneToilette($tid);
-                $form = $this->createForm(CommentType::class, $comment);
-                $form->handleRequest($request);
+            $comment = $commentRepository->findOneBy(['id' => $cid]);
+            $comment->setDateCommentaire(new DateTime());
+            $uneToilette = $this->toilettesRepository->uneToilette($comment->getidToilette());
+            $form = $this->createForm(CommentType::class, $comment);
+            $form->handleRequest($request);
 
-                if ($form->isSubmitted() && $form->isValid()) {
-                    $entityManager->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $entityManager->flush();
 
-                    return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
-                }
-
-                return $this->render('utilisateur/comment/edit.html.twig', [
-                    'comment' => $comment,
-                    'utilisateur' => $utilisateur,
-                    'form' => $form,
-                    'toilette' => $uneToilette,
-                ]);
+                return $this->redirectToRoute('app_comment_index', [], Response::HTTP_SEE_OTHER);
             }
+
+            return $this->render('utilisateur/comment/edit.html.twig', [
+                'comment' => $comment,
+                'utilisateur' => $utilisateur,
+                'form' => $form,
+                'toilette' => $uneToilette,
+            ]);
         }
     }
 

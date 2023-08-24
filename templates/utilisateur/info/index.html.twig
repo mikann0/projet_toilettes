@@ -43,7 +43,7 @@
 			<div class="com-btn">
 				<p>commentaire</p>
 				{% if userComment != null %}
-					<a href="{{path('app_comment_edit', {'tid': toilette.uid })}}" class="button3">Modifier</a>
+					<a href="{{path('app_comment_edit', {'cid': userComment.id })}}" class="button3">Modifier</a>
 				{% else %}
 					<a href="{{path('app_comment_new',{'tid': toilette.uid })}}" class="button3">Ajouter</a>
 				{% endif %}

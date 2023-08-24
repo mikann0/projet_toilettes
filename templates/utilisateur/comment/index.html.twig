@@ -25,7 +25,7 @@
 	<div class="container">
 		{% for comment in comments %}
 			<div class="list-commentaire">
-				<a href="{{ path('app_comment_edit',{'tid':comment.idToilette})}}">
+				<a href="{{ path('app_comment_edit',{'cid':comment.id})}}">
 					<div class="i-date">
 						<h2>{{ toiletById[comment.idToilette].nom }}</h2>
 						<p>{{ comment.dateCommentaire|date('Y-m-d')}}</p>
