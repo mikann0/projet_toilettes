@@ -138,10 +138,13 @@ class UtilisateurCommentController extends AbstractController
         }
     }
 
-    #[Route('/{id}', name: 'app_comment_delete', methods: ['POST'])]
-    public function delete(Request $request, Comment $comment, EntityManagerInterface $entityManager): Response
-    {
-        if ($this->isCsrfTokenValid('delete' . $comment->getId(), $request->request->get('_token'))) {
+    #[Route('/{cid}', name: 'app_comment_delete', methods: ['POST'])]
+    public function delete($cid, Request $request, EntityManagerInterface $entityManager, 
+    CommentRepository $commentRepository): Response
+    {   
+
+        $comment = $commentRepository->findOneBy(["id" => $cid]);
+        if ($this->isCsrfTokenValid('delete' . $cid, $request->request->get('_token'))) {
             $entityManager->remove($comment);
             $entityManager->flush();
         }
