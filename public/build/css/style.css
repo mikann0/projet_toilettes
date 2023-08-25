@@ -454,7 +454,7 @@ form{
     align-self: center;
 }
 
-#eye1, #eye2 {
+#eye1, #eye2, #eye3 {
     color: #56CBF9;
     font-size: 23px;
     right: 20px;
@@ -469,7 +469,8 @@ form{
 }
 
 .form-inscription #eye1, .container-mdp #eye1,
-.form-inscription #eye2, .container-mdp #eye2 {
+.form-inscription #eye2, .container-mdp #eye2,
+.form-inscription #eye3, .container-mdp #eye3 {
     top: 35px;
 }
 

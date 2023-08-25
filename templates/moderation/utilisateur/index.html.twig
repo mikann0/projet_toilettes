@@ -30,7 +30,7 @@
                 <td>{{ utilisateur.lastLogin ? utilisateur.lastLogin|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
                     <a href="{{ path('app_moderation_utilisateur_show', {'id': utilisateur.id}) }}">show</a>
-                    {# <a href="{{ path('app_moderation_utilisateur_edit', {'id': utilisateur.id}) }}">edit</a> #}
+                    <a href="{{ path('app_moderation_utilisateur_edit', {'id': utilisateur.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}

@@ -35,8 +35,8 @@ security:
         - { path: ^/moderation, roles: ROLE_MODERATION }
         # - { path: ^/profile, roles: ROLE_COMMENT }
 
-    #role_hierarchy:
-        #ROLE_MODERATION: ROLE_UTILISATEUR
+    role_hierarchy:
+        ROLE_MODERATION: ROLE_UTILISATEUR
 
 when@test:
     security:

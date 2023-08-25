@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ModifieMdpController!{% endblock %}
+
+{% block body %}
+<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="{{path('app_register')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="{{path('app_utilisateur_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<h1>{{utilisateur.nom|first|upper}}</h1>
+		</div>
+	</div>
+    <div class="container-mdp">
+        <h1>Modification de
+            mot de passe</h1>
+
+        <div class="con-form">
+            <label for="passe">mot de passe actuel</label>
+            <input type="password" name="passe" id="inputPassword3" required>
+				<i class="fa fa-eye" id="eye3" aria-hidden="true" onclick="togglePassword3()"></i>
+        </div>
+                {{ include('utilisateur/utilisateur/_form.html.twig', {'button_label': 'valider'}) }}
+        
+    </div>
+    </div>
+{% endblock %}

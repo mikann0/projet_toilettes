@@ -32,7 +32,7 @@ class UtilisateurFixtures extends Fixture
         $admin->setEmail('admin@test.fr');
         $password = $this->hasher->hashPassword($admin,'coucou');
         $admin->setPassword($password);
-        $admin->addRole("ROLE_MODERATION");
+        $admin->setRoles(["ROLE_MODERATION"]);
         #$admin->setDateIns(new \DateTime);
         $manager->persist($admin);
 

@@ -37,6 +37,22 @@ function togglePassword2() {
     }
 }
 
+function togglePassword3() {
+    const inputPassword = document.getElementById("inputPassword3");
+    const eye3 = document.getElementById("eye3");
+    if (inputPassword.type === "password") {
+        console.log("input has password");
+        inputPassword.type = "text";
+        eye3.classList.remove('fa-eye');
+        eye3.classList.add('fa-eye-slash');
+    } else {
+        console.log("input has no password");
+        inputPassword.type = "password";
+        eye3.classList.remove('fa-eye-slash');
+        eye3.classList.add('fa-eye');
+    }
+}
+
 
 function activateTextarea() {
     const textArea = document.getElementById("comment_commentaire");
