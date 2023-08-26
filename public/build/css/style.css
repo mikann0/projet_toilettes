@@ -412,6 +412,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-self: center;
 }
 
 .con-form input {
@@ -422,7 +423,7 @@ body {
     border-radius: 30px;
     margin-bottom: 20px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -442,7 +443,7 @@ form{
     margin-bottom: 10px;
 }
 
-.con-form>label {
+.con-form label {
     margin-bottom: 5px;
     font-size: 20px;
 }
@@ -484,7 +485,8 @@ form{
     align-items: center;
 }
 
-.container-mdp>.con-form>input {
+.container-mdp .con-form input,
+form>.con-form>input  {
     border: solid 1px;
     border-color: #56CBF9;
     cursor: pointer;

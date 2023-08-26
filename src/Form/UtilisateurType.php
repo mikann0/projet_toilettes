@@ -34,7 +34,6 @@ class UtilisateurType extends AbstractType
                 'invalid_message' => 'Les mots de passe doivent être identique',
                 'mapped' => false,
                 'options' => [
-                    'row_attr'  =>  ['class' => 'con-form', 'id' => ''],
                     'attr' => ['autocomplete' => 'new-password'],
                 ],
                 //creat form label

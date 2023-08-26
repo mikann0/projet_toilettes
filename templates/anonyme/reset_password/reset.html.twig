@@ -1,12 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Reset your password{% endblock %}
+{% block title %}Reset your password
+{% endblock %}
 
 {% block body %}
-    <h1>Reset your password</h1>
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="{{path('app_register')}}" class="bar-item">S’inscrire</a>
+		<a href="{{path('app_login')}}" class="bar-item">Se connecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="{{path('app_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<iconify-icon id="person" icon="charm:person"></iconify-icon>
+		</div>
+	</div>
+	<div class="container-mdp">
+		<h1>Creation d'un nouveaumot de passe</h1>
+		<div class="con-form">
+			<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
+			{{ form_start(resetForm) }}
+			{{ form_label(resetForm.plainPassword.first) }}
+			{{ form_widget(resetForm.plainPassword.first,{
+            id: 'inputPassword1'
+        }) }}
+		</div>
+		<div class="con-form">
+			<i class="fa fa-eye" id="eye2" aria-hidden="true" onclick="togglePassword2()"></i>
+			{{ form_label(resetForm.plainPassword.second) }}
+			{{ form_widget(resetForm.plainPassword.second,{
+            id: 'inputPassword2'
+        }) }}
+		</div>
 
-    {{ form_start(resetForm) }}
-        {{ form_row(resetForm.plainPassword) }}
-        <button class="btn btn-primary">Reset password</button>
-    {{ form_end(resetForm) }}
+		<button class="btn btn-primary button2">valider</button>
+		{{ form_end(resetForm) }}
+	</div>
 {% endblock %}
