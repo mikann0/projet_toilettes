@@ -5,9 +5,7 @@ namespace App\Form;
 use App\Entity\Utilisateur;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
-use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
@@ -37,8 +35,8 @@ class RegistrationFormType extends AbstractType
                 'invalid_message' => 'Les mots de passe doivent être identique',
                 'mapped' => false,
                 'options' =>[
-                 'row_attr'  =>  ['class' => 'con-form', 'id' => ''],
-                'attr' => ['autocomplete' => 'new-password'],   
+                    'row_attr'  =>  ['class' => 'con-form', 'id' => ''],
+                    'attr' => ['autocomplete' => 'new-password'],
                 ],
                 //creat form label
                 'first_options' => ['label' => 'mot de passe'],

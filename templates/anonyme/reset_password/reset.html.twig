@@ -21,10 +21,10 @@
 		</div>
 	</div>
 	<div class="container-mdp">
-		<h1>Creation d'un nouveaumot de passe</h1>
+		<h1>Création d'un nouveau mot de passe</h1>
+		{{ form_start(resetForm) }}
 		<div class="con-form">
 			<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
-			{{ form_start(resetForm) }}
 			{{ form_label(resetForm.plainPassword.first) }}
 			{{ form_widget(resetForm.plainPassword.first,{
             id: 'inputPassword1'
@@ -38,7 +38,7 @@
         }) }}
 		</div>
 
-		<button class="btn btn-primary button2">valider</button>
+		<button class="btn btn-primary button2">Valider</button>
 		{{ form_end(resetForm) }}
 	</div>
 {% endblock %}

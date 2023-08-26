@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ModificationPasswordController!
+{% endblock %}
+
+{% block body %}
+	{% for flash_error in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+	{% endfor %}
+	<div class="sidebar" style="display:none;" id="sidebar">
+		<button onclick="closeSidebar()" class="button">
+			<iconify-icon icon="charm:cross"></iconify-icon>
+		</button>
+		<a href="{{path('app_register')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
+		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
+	</div>
+	<div class="filtrer-recherche">
+		<a href="{{path('app_utilisateur_accueil')}}">
+			<iconify-icon id="arrow" icon="fe:arrow-left"></iconify-icon>
+		</a>
+		<h1>Toilettes</h1>
+		<div class="identify" onclick="openSidebar()">
+			<h1>{{utilisateur.nom|first|upper}}</h1>
+		</div>
+	</div>
+	<div class="container-mdp">
+		<h1>Modification du mot de passe</h1>
+		{{form_errors(form)}}
+		{{form_start(form)}}
+		<div class="con-form">
+			<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
+			{{ form_label(form.plainPassword.first) }}
+			{{ form_widget(form.plainPassword.first,{
+            id: 'inputPassword1'
+        }) }}
+		</div>
+		<div class="con-form">
+				<i class="fa fa-eye" id="eye2" aria-hidden="true" onclick="togglePassword2()"></i>
+				{{ form_label(form.plainPassword.second) }}
+				{{ form_widget(form.plainPassword.second,{
+            id: 'inputPassword2'
+        }) }}
+			</div>
+			<div class="con-form">
+				<i class="fa fa-eye" id="eye3" aria-hidden="true" onclick="togglePassword3()"></i>
+				{{ form_label(form.newPassword) }}
+				{{ form_widget(form.newPassword,{
+            id: 'inputPassword3'
+        }) }}
+			</div>
+			<button class="btn btn-primary button2">valider</button>
+		{{form_end(form)}}
+
+	</div>
+</div>{% endblock %}
