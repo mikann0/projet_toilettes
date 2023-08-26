@@ -45,6 +45,9 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'id_utilisateur', targetEntity: Comment::class)]
     private Collection $comments;
 
+    #[ORM\Column(type: 'boolean')]
+    private $isVerified = false;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -177,5 +180,17 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
                 $comment->setIdUtilisateur(null);
             }
         }
+    }
+
+    public function isVerified(): bool
+    {
+        return $this->isVerified;
+    }
+
+    public function setIsVerified(bool $isVerified): static
+    {
+        $this->isVerified = $isVerified;
+
+        return $this;
     }
 }
