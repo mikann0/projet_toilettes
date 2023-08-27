@@ -27,11 +27,24 @@
 			<div class="nom-star">
 				<p>Nom</p>
 				<div class="star">
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
-					<iconify-icon class="no-filter-star" icon="ion:star"></iconify-icon>
+						{% if moyenNote == -1 %}
+							<p>ajouter un commentaire</p>
+						{% elseif moyenNote == 0 %}
+							{% for _ in 1..5 %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% elseif moyenNote == 5 %}
+							{% for _ in 1..moyenNote %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% else %}
+							{% for _ in 1..moyenNote %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+							{% for _ in 1..5-moyenNote %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% endif %}
 				</div>
 			</div>
 			<h1>{{toilette.nom}}</h1>
@@ -58,11 +71,22 @@
 					</div>
 					<h4>{{comment.dateCommentaire|date('Y-m-d')}}</h4>
 					<div class="star">
-						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+						{% if moyenNote == 0 %}
+							{% for _ in 1..5 %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% elseif moyenNote == 5 %}
+							{% for _ in 1..moyenNote %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% else %}
+							{% for _ in 1..moyenNote %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+							{% for _ in 1..5-moyenNote %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% endif %}
 					</div>
 				</div>
 				<div class="check-commentaire">

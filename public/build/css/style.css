@@ -189,6 +189,10 @@ body {
     margin: 0 0 10px 0;
 }
 
+.star p {
+    font-size: 10px;
+}
+
 .star>.filter-star,
 .star>.no-filter-star {
     font-size: 24px;

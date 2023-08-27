@@ -39,11 +39,24 @@
 				<div class="nom">
 					<p>{{toilette.nom}}</p>
 					<div class="star">
-						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
-						<iconify-icon class="filter-star" icon="ion:star"></iconify-icon>
+						{% if moyenNotes[toilette.uid] == -1 %}
+							<p>ajouter un commentaire</p>
+						{% elseif moyenNotes[toilette.uid] == 0 %}
+							{% for _ in 1..5 %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% elseif moyenNotes[toilette.uid] == 5 %}
+							{% for _ in 1..moyenNotes[toilette.uid] %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% else %}
+							{% for _ in 1..moyenNotes[toilette.uid] %}
+								<iconify-icon class="s-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+							{% for _ in 1..5-moyenNotes[toilette.uid] %}
+								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
+							{% endfor %}
+						{% endif %}
 					</div>
 				</div>
 			</a>
@@ -51,5 +64,4 @@
 
 		<!-- <div class="gra"></div> -->
 	</div>
-
 {% endblock %}

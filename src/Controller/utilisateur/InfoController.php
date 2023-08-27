@@ -2,9 +2,11 @@
 
 namespace App\Controller\utilisateur;
 
+use App\Entity\Comment;
 use App\Repository\ToilettesRepository;
 use App\Repository\CommentRepository;
 use App\Entity\Utilisateur;
+use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LogLevel;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -27,7 +29,7 @@ class InfoController extends AbstractController
 
 
     #[Route('/toilette/{tid}', name: 'app_utilisateur_info')]
-    public function index($tid, CommentRepository $commentRepository, Security $security): Response
+    public function index($tid, CommentRepository $commentRepository, Security $security, EntityManagerInterface $entityManagerInterface): Response
     {
         $this->logger->log(LogLevel::WARNING, "Request toilette with id=" . $tid);
         $uneToilette = $this->toilettesRepository->uneToilette($tid);
@@ -35,6 +37,20 @@ class InfoController extends AbstractController
         if ($token !== null) {
             $utilisateur = $token->getUser();
             $comments = $commentRepository->findBy(['idToilette' => $tid]);
+
+            if (!empty($comments)) {
+                $queryBuilder = $commentRepository->createQueryBuilder('comment')
+                    ->select('SUM(comment.note) as sum')
+                    ->where('comment.idToilette = :specialId')
+                    ->setParameter('specialId', $uneToilette['uid'])
+                    ->getQuery();
+                $sum = $queryBuilder->getSingleScalarResult();
+                $moyenNote = $sum / count($comments);
+            } else {
+                $moyenNote = -1;
+            }
+
+
             if ($utilisateur instanceof Utilisateur) {
                 $userId = $utilisateur->getId();
                 $utilisateurComment = $commentRepository->findOneBy(['idToilette' => $tid, 'idUtilisateur' => $userId]);
@@ -45,6 +61,7 @@ class InfoController extends AbstractController
                 'comments' => $comments,
                 'utilisateur' => $utilisateur,
                 'userComment' => $utilisateurComment,
+                'moyenNote' => $moyenNote,
             ]);
         }
     }
