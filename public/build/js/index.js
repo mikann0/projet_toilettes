@@ -57,14 +57,10 @@ function togglePassword3() {
 function activateTextarea() {
     const textArea = document.getElementById("comment_commentaire");
     if (textArea.disabled) {
-        // textArea.classList.remove("inactive");
-        // textArea.classList.add("active");
         textArea.disabled = false;
         textArea.focus();
 
     } else {
-        // textArea.classList.add("inactive");
-        // textArea.classList.remove("active");
         textArea.disabled = true;
     }
 }
@@ -95,8 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const selectedValue = this.value;
             console.log(selectedValue);
 
-            // const hiddenInput = document.querySelector('#comment_note');
-            // hiddenInput.value = selectedValue;
             const items = document.querySelectorAll('.note_filtre');
             items.forEach(item => {
                 if (item.dataset.note == selectedValue) {

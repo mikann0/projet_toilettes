@@ -27,17 +27,12 @@ class ModificationPasswordController extends AbstractController
     }
 
     #[Route('/{uid}/edit', name: 'app_modification_password', methods: ['GET', 'POST'])]
-    public function edit($uid, Request $request, EntityManagerInterface $entityManager, UtilisateurRepository $utilisateurRepository, UserPasswordHasherInterface $userPasswordHasherInterface): Response
+    public function edit($uid, Request $request, EntityManagerInterface $entityManager,
+        UtilisateurRepository $utilisateurRepository,
+        UserPasswordHasherInterface $userPasswordHasherInterface): Response
     {
         $utilisateur = $utilisateurRepository->findOneBy(["id" => $uid]);
-        // if (!$this->getUser()) {
-        //     $this->logger->log(LogLevel::INFO, "@MIKA there is no user.");
-        //     return $this->redirectToRoute('app_login');
-        // }
-        // if ($this->getUser() !== $utilisateur) {
-        //     $this->logger->log(LogLevel::INFO, "@MIKA user id and current user are different.");
-        //     return $this->redirectToRoute('app_accueil');
-        // }
+
         $form = $this->createForm(ModificationPasswordType::class);
 
         $form->handleRequest($request);
@@ -48,8 +43,6 @@ class ModificationPasswordController extends AbstractController
                 $newPassword = $data['newPassword'];
                 $hashedNewPassword = $userPasswordHasherInterface->hashPassword($utilisateur, $newPassword);
                 $utilisateur->setPassword($hashedNewPassword);
-
-                // $entityManager->persist($utilisateur);
                 $entityManager->flush();
 
                 $this->addFlash(

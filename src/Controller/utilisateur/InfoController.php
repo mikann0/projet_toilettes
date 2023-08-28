@@ -29,7 +29,8 @@ class InfoController extends AbstractController
 
 
     #[Route('/toilette/{tid}', name: 'app_utilisateur_info')]
-    public function index($tid, CommentRepository $commentRepository, Security $security, EntityManagerInterface $entityManagerInterface): Response
+    public function index($tid, CommentRepository $commentRepository, Security $security,
+        EntityManagerInterface $entityManagerInterface): Response
     {
         $this->logger->log(LogLevel::WARNING, "Request toilette with id=" . $tid);
         $uneToilette = $this->toilettesRepository->uneToilette($tid);
