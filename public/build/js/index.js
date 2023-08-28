@@ -84,3 +84,42 @@ function buttonActive() {
         submitButton.classList.add('button3');
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+    const clearButton = document.querySelector('#clear-filter');
+
+    radioButtons.forEach(button => {
+        button.addEventListener("change", function () {
+            const selectedValue = this.value;
+            console.log(selectedValue);
+
+            // const hiddenInput = document.querySelector('#comment_note');
+            // hiddenInput.value = selectedValue;
+            const items = document.querySelectorAll('.note_filtre');
+            items.forEach(item => {
+                if (item.dataset.note == selectedValue) {
+                    item.style.display = "flex";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+        // When a click is received, don't send the even to the parent.
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+    });
+
+    clearButton.addEventListener("click", function () {
+        const items = document.querySelectorAll('.note_filtre');
+        items.forEach(item => {
+            item.style.display = "flex";
+        });
+         radioButtons.forEach(button => {
+            button.checked = false;
+        });
+    });
+});
+

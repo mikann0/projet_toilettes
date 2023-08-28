@@ -7,8 +7,8 @@
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>
 		</button>
-		<a href="{{path('app_register')}}" class="bar-item">Voir tous vos commentaires</a>
-		<a href="{{path('app_register')}}" class="bar-item">Modifier votre mot de passe</a>
+		<a href="{{path('app_comment_index')}}" class="bar-item">Voir tous vos commentaires</a>
+		<a href="{{path('app_modification_password',{'uid':utilisateur.id})}}" class="bar-item">Modifier votre mot de passe</a>
 		<a href="{{path('app_suppression')}}" class="bar-item">Supprimer votre compte</a>
 		<a href="{{ path('app_logout') }}" class="bar-item">Se déconnecter</a>
 	</div>

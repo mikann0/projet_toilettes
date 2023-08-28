@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 66px;
+    /* height: 66px; */
     padding-left: 70px;
     padding-right: 70px;
     flex-direction: row-reverse;
@@ -602,7 +602,8 @@ form>.con-form>input  {
     justify-content: space-evenly;
     height: 30px;
     width: 280px;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
 }
 
 .info>.filtrer-note label {
