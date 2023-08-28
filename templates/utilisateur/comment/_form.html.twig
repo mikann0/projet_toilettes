@@ -22,19 +22,19 @@
 	{{ form_start(form) }}
 	{{ form_row(form.note) }}
 	{{ form_row(form.enPanne,{
-            label: 'en panne'
+            label: 'En panne'
         }) }}
 	{{ form_row(form.nExistePlus,{
-            label: 'n\'existe plus'
+            label: "N'existe plus"
         }) }}   
     {{ form_row(form.accesHandicape,{
-            label: 'accès handicapé'
+            label: 'Accès handicapé'
         }) }}   
             <div class="form-checkbox">
-          <label for="check4">autre</label>
+          <label for="check4">Autre</label>
           <input type="checkbox" id="check4" onchange=activateTextarea()>
         </div>
     {{ form_widget(form.commentaire) }}   
 </div>
-<button class="btn button2">{{ button_label|default('valider') }}</button>
+<button class="btn button2">{{ button_label|default('Valider') }}</button>
 {{ form_end(form) }}

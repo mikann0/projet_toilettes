@@ -1,7 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ModerationControllrController!{% endblock %}
-
 {% block body %}
 <div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
@@ -26,8 +24,8 @@
 	</div>
 	<div class="container">
 
-<h2>moderation</h2>
-<a href="{{path('app_moderation_utilisateur_index')}}">utilisateur</a>
-<a href="{{path('app_moderation_comment_index')}}">comment</a>
+<h2>Modération</h2>
+<a href="{{path('app_moderation_utilisateur_index')}}">Utilisateurs</a>
+<a href="{{path('app_moderation_comment_index')}}">Commentaires</a>
 </div>
 {% endblock %}

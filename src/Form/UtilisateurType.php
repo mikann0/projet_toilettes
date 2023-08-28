@@ -37,8 +37,8 @@ class UtilisateurType extends AbstractType
                     'attr' => ['autocomplete' => 'new-password'],
                 ],
                 //creat form label
-                'first_options' => ['label' => 'nouveau mot de passe'],
-                'second_options' => ['label' => 'confirmation du mot de passe'],
+                'first_options' => ['label' => 'Nouveau mot de passe'],
+                'second_options' => ['label' => 'Confirmation du mot de passe'],
                 'constraints' => [
                     new NotBlank([
                         'message' => 'Le mot de passe ne doit pas être vide.',

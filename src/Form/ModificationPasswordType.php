@@ -40,7 +40,7 @@ class ModificationPasswordType extends AbstractType
             ])
             ->add('newPassword', PasswordType::class, [
                 'row_attr'  =>  ['class' => 'con-form', 'id' => ''],
-                'label' => 'nouveau mot de passe',
+                'label' => 'Nouveau mot de passe',
                 'constraints' => [new NotBlank([
                     'message' => 'Le mot de passe ne doit pas être vide.',
                 ]),

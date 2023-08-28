@@ -1,7 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ModifieMdpController!{% endblock %}
-
 {% block body %}
 <div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
@@ -22,15 +20,14 @@
 		</div>
 	</div>
     <div class="container-mdp">
-        <h1>Modification de
-            mot de passe</h1>
+        <h1>Modification du mot de passe</h1>
 
         <div class="con-form">
-            <label for="passe">mot de passe actuel</label>
+            <label for="passe">Mot de passe actuel</label>
             <input type="password" name="passe" id="inputPassword3" required>
 				<i class="fa fa-eye" id="eye3" aria-hidden="true" onclick="togglePassword3()"></i>
         </div>
-                {{ include('utilisateur/utilisateur/_form.html.twig', {'button_label': 'valider'}) }}
+                {{ include('utilisateur/utilisateur/_form.html.twig', {'button_label': 'Valider'}) }}
         
     </div>
     </div>

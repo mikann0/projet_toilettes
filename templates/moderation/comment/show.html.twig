@@ -1,14 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Comment{% endblock %}
-
 {% block body %}
     <h1>Comment</h1>
 
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Identifiant</th>
                 <td>{{ comment.id }}</td>
             </tr>
             <tr>
@@ -16,15 +14,15 @@
                 <td>{{ comment.note }}</td>
             </tr>
             <tr>
-                <th>En_panne</th>
+                <th>En panne ?</th>
                 <td>{{ comment.enPanne }}</td>
             </tr>
             <tr>
-                <th>N_existe__plus</th>
+                <th>N'existe plus</th>
                 <td>{{ comment.nExistePlus }}</td>
             </tr>
             <tr>
-                <th>Acces_handicape</th>
+                <th>Accès handicapé ?</th>
                 <td>{{ comment.accesHandicape }}</td>
             </tr>
             <tr>
@@ -32,7 +30,7 @@
                 <td>{{ comment.commentaire }}</td>
             </tr>
             <tr>
-                <th>Date_commentaire</th>
+                <th>Date du commentaire</th>
                 <td>{{ comment.dateCommentaire|date('Y-m-d')}}</td>
             </tr>
             <tr>
@@ -42,9 +40,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_moderation_comment_index') }}">back to list</a>
+    <a href="{{ path('app_moderation_comment_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('app_moderation_comment_edit', {'id': comment.id}) }}">edit</a>
+    <a href="{{ path('app_moderation_comment_edit', {'id': comment.id}) }}">Modifier</a>
 
     {{ include('moderation/comment/_delete_form.html.twig') }}
 {% endblock %}

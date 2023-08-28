@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello InfoController!
-{% endblock %}
-
 {% block body %}
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
@@ -28,7 +25,7 @@
 				<p>Nom</p>
 				<div class="star">
 						{% if moyenNote == -1 %}
-							<p>ajouter un commentaire</p>
+							<p>Ajouter un commentaire</p>
 						{% elseif moyenNote == 0 %}
 							{% for _ in 1..5 %}
 								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>
@@ -51,10 +48,10 @@
 			<p>Adresse / Code postal</p>
 			<h2>{{toilette.adresse}}</h2>
 			<h2>{{toilette.codepost}}</h2>
-			<p>informations</p>
+			<p>Informations</p>
 			<h2>{{toilette.infoloc}}</h2>
 			<div class="com-btn">
-				<p>commentaire</p>
+				<p>Commentaire</p>
 				{% if userComment != null %}
 					<a href="{{path('app_comment_edit', {'cid': userComment.id })}}" class="button3">Modifier</a>
 				{% else %}
@@ -91,13 +88,13 @@
 				</div>
 				<div class="check-commentaire">
 					{% if comment.enPanne == 1 %}
-						<p>en panne</p>
+						<p>En panne</p>
 					{% endif %}
 					{% if comment.nExistePlus == 1 %}
-						<p>n'existe plus</p>
+						<p>N'existe plus</p>
 					{% endif %}
 					{% if comment.accesHandicape == 1 %}
-						<p>n'existe plus</p>
+						<p>Accès handicapé</p>
 					{% endif %}
 				</div>
 				<p>{{comment.commentaire}}</p>

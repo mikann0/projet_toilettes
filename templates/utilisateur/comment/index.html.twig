@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Commentaire
-{% endblock %}
-
 {% block body %}
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
@@ -50,13 +47,13 @@
 					</div>
 					<div class="check-commentaire">
 						{% if comment.enPanne == 1 %}
-							<p>en panne</p>
+							<p>En panne</p>
 						{% endif %}
 						{% if comment.nExistePlus == 1 %}
-							<p>n'existe plus</p>
+							<p>N'existe plus</p>
 						{% endif %}
 						{% if comment.accesHandicape == 1 %}
-							<p>accès handicapé</p>
+							<p>Accès handicapé</p>
 						{% endif %}
 					</div>
 					<p>{{comment.commentaire}}</p>

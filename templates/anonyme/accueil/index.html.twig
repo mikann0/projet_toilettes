@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AccueilController!
-{% endblock %}
-
 {% block body %}
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
@@ -14,7 +11,7 @@
 	<div class="filtrer-recherche">
 		<form action="{{ path('app_accueil') }}" method="GET">
 			<iconify-icon id="serch" icon="fluent:search-12-filled"></iconify-icon>
-			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="codepostal ou nom" id="recherche">
+			<input type="text" name="searchValue" value="{{ searchValue }}" placeholder="Code postal ou nom" id="recherche">
 		</form>
 		<div class="identify">
 			<iconify-icon id="person" icon="charm:person" onclick="openSidebar()"></iconify-icon>
@@ -30,6 +27,5 @@
 			</a>
 		{% endfor %}
 	</div>
-	{# <div class="gra"></div>  #}
 
 {% endblock %}

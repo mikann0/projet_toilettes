@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Reset your password
-{% endblock %}
-
 {% block body %}
 	{% for flash_error in app.flashes('reset_password_error') %}
 		<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
@@ -24,19 +21,19 @@
 		</div>
 	</div>
 	<div class="container-mdp">
-		<h1>mot de passe oublié</h1>
+		<h1>Mot de passe oublié</h1>
 		{{ form_start(requestForm) }}
 		{{ form_row(requestForm.email,{
-            label: 'e-mail'
+            label: 'E-mail'
         }) }}
 		<div>
 			<small>
-				Enter your email address, and we will send you a
-				                link to reset your password.
+				Indiquez votre adresse e-mail ici. 
+				Vous recevrez un e-mail avec un lien pour mettre à jour votre mot de passe.
 			</small>
 		</div>
 
-		<button class="btn btn-primary button2">valider</button>
+		<button class="btn btn-primary button2">Valider</button>
 		{{ form_end(requestForm) }}
 	</div>
 {% endblock %}

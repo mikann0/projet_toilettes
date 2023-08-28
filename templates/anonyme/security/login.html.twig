@@ -1,8 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!
-{% endblock %}
-
 {% block body %}
 	<div class="form">
 		<div class="filtrer-recherche">
@@ -17,12 +14,12 @@
 					<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 				{% endif %}
 				<div class="con-form">
-					<label for="inputEmail">e-mail</label>
+					<label for="inputEmail">E-mail</label>
 					<input type="email" name="email" id="inputEmail" required autofocus>
 				</div>
 				<div class="con-form">
 					<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
-					<label for="inputPassword1">mot de passe</label>
+					<label for="inputPassword1">Mot de passe</label>
 					<input type="password" name="password" id="inputPassword1" required>
 					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 				</div>
@@ -30,7 +27,7 @@
 					Se connecter
 				</button>
 			</br>
-			<a href="{{path('app_forgot_password_request')}}">mot de passe oublié ?</a>
+			<a href="{{path('app_forgot_password_request')}}">Mot de passe oublié ?</a>
 
 		</form>
 	</div>
