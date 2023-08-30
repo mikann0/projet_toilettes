@@ -9,6 +9,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use SymfonyCasts\Bundle\VerifyEmail\Exception\VerifyEmailExceptionInterface;
 use SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface;
+use App\Entity\Utilisateur;
 
 class EmailVerifier
 {
@@ -19,13 +20,16 @@ class EmailVerifier
     ) {
     }
 
-    public function sendEmailConfirmation(string $verifyEmailRouteName, UserInterface $user, TemplatedEmail $email): void
+    public function sendEmailConfirmation(string $verifyEmailRouteName, UserInterface $utilisateur, 
+    TemplatedEmail $email): void
     {
-        $signatureComponents = $this->verifyEmailHelper->generateSignature(
-            $verifyEmailRouteName,
-            $user->getId(),
-            $user->getEmail()
-        );
+        if ($utilisateur instanceof Utilisateur) {
+            $signatureComponents = $this->verifyEmailHelper->generateSignature(
+                $verifyEmailRouteName,
+                $utilisateur->getId(),
+                $utilisateur->getEmail()
+            );
+        }
 
         $context = $email->getContext();
         $context['signedUrl'] = $signatureComponents->getSignedUrl();
@@ -40,13 +44,16 @@ class EmailVerifier
     /**
      * @throws VerifyEmailExceptionInterface
      */
-    public function handleEmailConfirmation(Request $request, UserInterface $user): void
+    public function handleEmailConfirmation(Request $request, UserInterface $utilisateur): void
     {
-        $this->verifyEmailHelper->validateEmailConfirmation($request->getUri(), $user->getId(), $user->getEmail());
+        if ($utilisateur instanceof Utilisateur) {
+        $this->verifyEmailHelper->validateEmailConfirmation(
+            $request->getUri(), $utilisateur->getId(), $utilisateur->getEmail());
 
-        $user->setIsVerified(true);
+        $utilisateur->setIsVerified(true);
 
-        $this->entityManager->persist($user);
+        $this->entityManager->persist($utilisateur);
         $this->entityManager->flush();
+        }
     }
 }

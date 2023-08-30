@@ -2,11 +2,14 @@
 
 namespace App\Security;
 
+use App\Entity\Utilisateur;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator;
 use Symfony\Component\Security\Http\Authenticator\Passport\Badge\CsrfTokenBadge;
@@ -21,7 +24,9 @@ class CustomAuthenticator extends AbstractLoginFormAuthenticator
 
     public const LOGIN_ROUTE = 'app_login';
 
-    public function __construct(private UrlGeneratorInterface $urlGenerator)
+    public function __construct(private UrlGeneratorInterface $urlGenerator,
+        private EntityManagerInterface $entityManager,
+        private TokenStorageInterface $tokenStorage)
     {
     }
 
@@ -45,7 +50,24 @@ class CustomAuthenticator extends AbstractLoginFormAuthenticator
             return new RedirectResponse($targetPath);
         }
 
-        return new RedirectResponse($this->urlGenerator->generate('app_utilisateur_accueil'));
+        if ($token !== null) {
+            $utilisateur = $token->getUser();
+            if ($utilisateur instanceof Utilisateur) {
+                if(!$utilisateur->isVerified()) {
+                    $request->getSession()->invalidate();
+                    $this->tokenStorage->setToken(null);
+                    $request->getSession()->getFlashBag()->add(
+                        "error",
+                        "Cliquez sur le lien de vérification ou bien créez un nouveau mot de passe !"
+                    );
+                    return new RedirectResponse($this->urlGenerator->generate('app_accueil'));
+                } else {
+                    $utilisateur->setLastLogin(new \DateTime());
+                    $this->entityManager->flush();
+                    return new RedirectResponse($this->urlGenerator->generate('app_utilisateur_accueil'));
+                }
+            }
+        }
     }
 
     protected function getLoginUrl(Request $request): string

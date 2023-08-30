@@ -53,8 +53,13 @@ class RegistrationController extends AbstractController
                     ->htmlTemplate('anonyme/registration/confirmation_email.html.twig')
             );
             // do anything else you need here, like send an email
+            $this->addFlash(
+                'checkEmail',
+                "Un mail de confirmation a été envoyé à l'adresse que vous avez indiqué.".
+                " Cliquez sur le lien pour pouvoir vous connecter."
+            );
 
-            return $this->redirectToRoute('app_utilisateur_accueil');
+            return $this->redirectToRoute('app_accueil');
         }
 
         return $this->render('anonyme/registration/register.html.twig', [
@@ -73,7 +78,7 @@ class RegistrationController extends AbstractController
         } catch (VerifyEmailExceptionInterface $exception) {
             $this->addFlash('verify_email_error', $exception->getReason());
 
-            return $this->redirectToRoute('app_utilisateur_accueil');
+            return $this->redirectToRoute('app_register');
         }
 
         // @TODO Change the redirect on success and handle or remove the flash message in your templates

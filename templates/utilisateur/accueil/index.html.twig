@@ -1,6 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+	{% for success, messages in app.flashes %}
+		<div class="flash flash-{{ success }}">
+			{% for message in messages %}
+				{{ message|raw }}
+			{% endfor %}
+		</div>
+	{% endfor %}
+
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>
@@ -22,6 +30,7 @@
 			<h1>{{utilisateur.nom|first|upper}}</h1>
 		</div>
 	</div>
+
 	<div class="list">
 		<div class="filtrer-note" id="clear-filter">
 			<input id="review05" type="radio" name="review" value="5"><label for="review05" class="radio_label">★</label>

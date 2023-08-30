@@ -1,6 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+	{% for label, messages in app.flashes %}
+		<div class="flash flash-{{ label }}">
+			{% for message in messages %}
+				{{ message|raw }}
+			{% endfor %}
+		</div>
+	{% endfor %}
+
 	<div class="sidebar" style="display:none;" id="sidebar">
 		<button onclick="closeSidebar()" class="button">
 			<iconify-icon icon="charm:cross"></iconify-icon>

@@ -17,7 +17,8 @@
 		<input id="review03" type="radio" name="review" value="3"><label for="review03">★</label>
 		<input id="review04" type="radio" name="review" value="2"><label for="review04">★</label>
 		<input id="review05" type="radio" name="review" value="1"><label for="review05">★</label>
-		<input id="review00" type="radio" name="review" value="0"><label for="review00" style="text-indent:-999px; width:50px" ;>★</label>
+		{# <input id="review00" type="radio" name="review" value="0"><label for="review00" style="text-indent:-999px; width:50px";>★</label> #}
+		<input id="review00" type="radio" name="review" value="0"><label for="review00">☆</label>
 	</div>
 	{{ form_start(form) }}
 	{{ form_row(form.note) }}
@@ -26,15 +27,15 @@
         }) }}
 	{{ form_row(form.nExistePlus,{
             label: "N'existe plus"
-        }) }}   
-    {{ form_row(form.accesHandicape,{
+        }) }}
+	{{ form_row(form.accesHandicape,{
             label: 'Accès handicapé'
-        }) }}   
-            <div class="form-checkbox">
-          <label for="check4">Autre</label>
-          <input type="checkbox" id="check4" onchange=activateTextarea()>
-        </div>
-    {{ form_widget(form.commentaire) }}   
+        }) }}
+	<div class="form-checkbox">
+		<label for="check4">Autre</label>
+		<input type="checkbox" id="check4" onchange="activateTextarea()">
+	</div>
+	{{ form_widget(form.commentaire) }}
 </div>
 <button class="btn button2">{{ button_label|default('Valider') }}</button>
 {{ form_end(form) }}

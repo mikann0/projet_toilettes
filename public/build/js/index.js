@@ -91,6 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const selectedValue = this.value;
             console.log(selectedValue);
 
+            const hiddenInput = document.querySelector('#comment_note');
+            if(hiddenInput) {
+                hiddenInput.value = selectedValue;
+            }
+
             const items = document.querySelectorAll('.note_filtre');
             items.forEach(item => {
                 if (item.dataset.note == selectedValue) {
@@ -101,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
         // When a click is received, don't send the even to the parent.
-        button.addEventListener("click", function(event) {
+        button.addEventListener("click", function (event) {
             event.stopPropagation();
         });
     });
@@ -111,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         items.forEach(item => {
             item.style.display = "flex";
         });
-         radioButtons.forEach(button => {
+        radioButtons.forEach(button => {
             button.checked = false;
         });
     });
