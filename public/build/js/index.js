@@ -83,16 +83,23 @@ function buttonActive() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const radioButtons = document.querySelectorAll('input[type="radio"]');
-
     const clearButton = document.querySelector('#clear-filter');
+    const hiddenInput = document.querySelector('#comment_note');
+
+    if(hiddenInput){
+    radioButtons.forEach(button => {
+        if (button.value <= hiddenInput.value){
+        button.nextElementSibling.setAttribute('data-selected', 'true');
+        }
+    });}
 
     radioButtons.forEach(button => {
         button.addEventListener("change", function () {
+            radioButtons.forEach(button => {
+                button.nextElementSibling.setAttribute('data-selected', 'false');});
             const selectedValue = this.value;
-            console.log(selectedValue);
 
-            const hiddenInput = document.querySelector('#comment_note');
-            if(hiddenInput) {
+            if (hiddenInput) {
                 hiddenInput.value = selectedValue;
             }
 
@@ -110,15 +117,17 @@ document.addEventListener("DOMContentLoaded", function () {
             event.stopPropagation();
         });
     });
+    if (clearButton) {
+        clearButton.addEventListener("click", function () {
+            const items = document.querySelectorAll('.note_filtre');
+            items.forEach(item => {
+                item.style.display = "flex";
+            });
+            radioButtons.forEach(button => {
+                button.checked = false;
+            });
+        });
+    }
 
-    clearButton.addEventListener("click", function () {
-        const items = document.querySelectorAll('.note_filtre');
-        items.forEach(item => {
-            item.style.display = "flex";
-        });
-        radioButtons.forEach(button => {
-            button.checked = false;
-        });
-    });
 });
 

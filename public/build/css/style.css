@@ -59,9 +59,19 @@ body {
     cursor: pointer;
 }
 
+.info>.filtrer-note label {
+    color: #dbdbdb;
+    font-size: 40px;
+    cursor: pointer;
+} 
+
 .filtrer-note label:hover,
 .filtrer-note label:hover~label,
 .filtrer-note input[type='radio']:checked~label {
+    color: #56CBF9;
+}
+
+.info>.filtrer-note label[data-selected="true"] {
     color: #56CBF9;
 }
 
@@ -103,6 +113,7 @@ body {
     padding-left: 50px;
     width: 55%;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #recherche:current {
@@ -126,9 +137,6 @@ body {
     width: 64px;
     position: absolute;
     right: 80px;
-
-    /* color:#fff!important; */
-    /* background-color:#009688!important */
 }
 
 .identify>h1{
@@ -151,8 +159,7 @@ body {
 }
 
 .identify:hover {
-    /* color:#000!important; */
-    background-color: #dbdbdb !important;
+    background-color: #dbdbdb;
     cursor: pointer;
 }
 
@@ -218,26 +225,29 @@ body {
     display: inline-block;
     text-align: left;
     border: none;
+    display: flex;
+    align-items: center;
 }
 
 .button {
     padding: 0;
-    font-size: 25px;
+    font-size: 30px;
     color: #ffffff;
-    height: 70px;
+    height: 60px;
     background-color: #56CBF9;
     width: 100%;
     z-index: 1;
     padding: 12px 16px;
+
 }
 
 .bar-item {
     display: inline-block;
-    padding: 26px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     cursor: pointer;
     width: 268px;
-    height: 25px;
+    height: 40px;
     color: #ffffff;
     box-shadow: 0px 3px 1px #56CBF9;
     font-size: 22px;
@@ -300,6 +310,10 @@ body {
     font-size: 20px;
 }
 
+.link>p>a:hover {
+    color: #ffffff;
+}
+
 #sidebar>a {
     text-decoration: none;
     color: black;
@@ -316,6 +330,7 @@ body {
     font-weight:bold;
     margin-top: 50px;
     align-self: center;
+    cursor: pointer;
 }
 
 .button2{
@@ -329,6 +344,18 @@ body {
     border-color: #56CBF9;
     border: 1px solid;
 }
+
+.button1:hover, .button2:hover, .button3:hover {
+    background-color: #dbdbdb;
+    color: #56CBF9;
+}
+
+.button1:checked, .button2:checked, .button3:checked  {
+    background-color: #dbdbdb;
+    color: #56CBF9;
+    border: 1px solid #56CBF9;
+}
+
 
 /*toilette-une -avec*/
 .nom-star,
@@ -473,6 +500,10 @@ form{
     font-size: 18px;
 }
 
+.form-inscription a:hover {
+    color: #56CBF9;
+}
+
 .form-inscription #eye1, .container-mdp #eye1,
 .form-inscription #eye2, .container-mdp #eye2,
 .form-inscription #eye3, .container-mdp #eye3 {
@@ -582,17 +613,32 @@ form>.con-form>input  {
 /* suppression du compte */
 .container-mdp .form-checkbox {
     margin-top: 30px;
-} */
+    cursor: pointer;
+} 
+
+.form-checkbox label, .form-checkbox input {
+    cursor: pointer;
+}
+
+.info .form-checkbox{
+    margin:5px 0px;
+}
 
 .container-mdp label {
     align-self: baseline;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .container-mdp>a {
     color: #56CBF9;
     margin-top: 30px;
 }
+
+.container-mdp>a:hover {
+    color: #dbdbdb;
+}
+
 
 /* form-commentaire */
 .info>.filtrer-note {
@@ -606,11 +652,6 @@ form>.con-form>input  {
     margin-bottom: 20px;
 }
 
-.info>.filtrer-note label {
-    color: #dbdbdb;
-    font-size: 40px;
-    cursor: pointer;
-}
 
 .filter-star-gray {
     color: #dbdbdb;

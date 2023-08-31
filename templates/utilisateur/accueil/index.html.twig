@@ -33,11 +33,12 @@
 
 	<div class="list">
 		<div class="filtrer-note" id="clear-filter">
-			<input id="review05" type="radio" name="review" value="5"><label for="review05" class="radio_label">★</label>
-			<input id="review04" type="radio" name="review" value="4"><label for="review04" class="radio_label">★</label>
-			<input id="review03" type="radio" name="review" value="3"><label for="review03" class="radio_label">★</label>
-			<input id="review02" type="radio" name="review" value="2"><label for="review02" class="radio_label">★</label>
-			<input id="review01" type="radio" name="review" value="1"><label for="review01" class="radio_label">★</label>
+			<input id="review5" type="radio" name="review" value="5"><label for="review5" class="radio_label">★</label>
+			<input id="review4" type="radio" name="review" value="4"><label for="review4" class="radio_label">★</label>
+			<input id="review3" type="radio" name="review" value="3"><label for="review3" class="radio_label">★</label>
+			<input id="review2" type="radio" name="review" value="2"><label for="review2" class="radio_label">★</label>
+			<input id="review1" type="radio" name="review" value="1"><label for="review1" class="radio_label">★</label>
+			<input id="review0" type="radio" name="review" value="0"><label for="review0">☆</label>
 		</div>
 		{% for toilette in toilettes %}
 			<a href="{{ path('app_utilisateur_info',{'tid':toilette.uid})}}">
