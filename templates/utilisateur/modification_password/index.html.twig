@@ -24,10 +24,11 @@
 	</div>
 	<div class="container-mdp">
 		<h1>Modification du mot de passe</h1>
-		{{form_errors(form)}}
 		{{form_start(form)}}
+		{{form_errors(form)}}
 		<div class="con-form">
 			<i class="fa fa-eye" id="eye1" aria-hidden="true" onclick="togglePassword1()"></i>
+
 			{{ form_label(form.plainPassword.first) }}
 			{{ form_widget(form.plainPassword.first,{
             id: 'inputPassword1'
@@ -40,6 +41,8 @@
             id: 'inputPassword2'
         }) }}
 			</div>
+		{{ form_errors(form.plainPassword.first) }}
+
 			<div class="con-form">
 				<i class="fa fa-eye" id="eye3" aria-hidden="true" onclick="togglePassword3()"></i>
 				{{ form_label(form.newPassword) }}
@@ -47,6 +50,7 @@
             id: 'inputPassword3'
         }) }}
 			</div>
+				{{ form_errors(form.newPassword) }}
 			<button class="btn btn-primary button2">Valider</button>
 		{{form_end(form)}}
 

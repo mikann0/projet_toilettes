@@ -34,7 +34,7 @@
             id: 'inputPassword2'
         }) }}
 		</div>
-
+		{{ form_errors(resetForm.plainPassword.first) }}
 		<button class="btn btn-primary button2">Valider</button>
 		{{ form_end(resetForm) }}
 	</div>

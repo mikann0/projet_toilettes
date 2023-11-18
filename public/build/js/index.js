@@ -66,11 +66,12 @@ function activateTextarea() {
 }
 
 
+
 function buttonActive() {
-    const check5 = document.getElementById('check5');
-    const check6 = document.getElementById('check6');
+    const check_mes_commentaires = document.getElementById('check_mes_commentaires');
+    const check_autres_commentaires = document.getElementById('check_autres_commentaires');
     const submitButton = document.getElementById('submitButton');
-    if (check5.checked && check6.checked) {
+    if (check_mes_commentaires.checked && check_autres_commentaires.checked) {
         submitButton.removeAttribute('disabled');
         submitButton.classList.remove('button3');
         submitButton.classList.add('button2');

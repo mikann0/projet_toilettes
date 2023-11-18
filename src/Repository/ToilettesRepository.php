@@ -15,9 +15,9 @@ class ToilettesRepository
     // Constructor
     public function __construct()
     {
-        // $response = file_get_contents('https://data.grandlyon.com/fr/datapusher/ws/grandlyon/lyon.toilettepublique_latest/all.json?maxfeatures=-1&start=1');
+        $response = file_get_contents('https://data.grandlyon.com/fr/datapusher/ws/grandlyon/lyon.toilettepublique_latest/all.json?maxfeatures=-1&start=1');
 
-        $response = file_get_contents("build/files/all.json");
+        // $response = file_get_contents("build/files/all.json");
 
         $this->logger = new Logger();
         $this->logger->log(LogLevel::WARNING, "Create repository");

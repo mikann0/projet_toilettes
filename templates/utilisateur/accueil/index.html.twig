@@ -46,7 +46,7 @@
 					<p>{{toilette.nom}}</p>
 					<div class="star">
 						{% if moyenNotes[toilette.uid] == -1 %}
-							<p>Ajouter un commentaire</p>
+							<p>Aucun commentaire</p>
 						{% elseif moyenNotes[toilette.uid] == 0 %}
 							{% for _ in 1..5 %}
 								<iconify-icon class="s-no-filter-star" icon="ion:star"></iconify-icon>

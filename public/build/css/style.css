@@ -7,7 +7,6 @@ body {
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .filtrer-recherche {
@@ -197,7 +196,7 @@ body {
 }
 
 .star p {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .star>.filter-star,
@@ -479,7 +478,6 @@ form{
     font-size: 20px;
 }
 
-
 .form-inscription button {
     margin-top: 80px;
     margin-bottom: 100px;
@@ -501,13 +499,24 @@ form{
 }
 
 .form-inscription a:hover {
-    color: #56CBF9;
+    color: #dbdbdb;
 }
 
 .form-inscription #eye1, .container-mdp #eye1,
 .form-inscription #eye2, .container-mdp #eye2,
 .form-inscription #eye3, .container-mdp #eye3 {
     top: 35px;
+}
+
+.form-inscription ul {
+    width: 250px;
+    margin: 0px;
+    padding: 0;
+    color: #1F1F1F;
+}
+
+.form-inscription ul>li {
+   list-style: none;
 }
 
 /* form  mdp oublie et nouveau*/
@@ -639,6 +648,16 @@ form>.con-form>input  {
     color: #dbdbdb;
 }
 
+.container-mdp ul {
+    width: 250px;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    color: #1F1F1F;
+}
+
+.container-mdp ul>li {
+   list-style: none;
+}
 
 /* form-commentaire */
 .info>.filtrer-note {
@@ -680,3 +699,4 @@ textarea.active {
    position: absolute;
    z-index: 3;
 }
+
