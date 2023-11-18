@@ -17,6 +17,7 @@ use Symfony\Component\Security\Http\Authenticator\Passport\Badge\UserBadge;
 use Symfony\Component\Security\Http\Authenticator\Passport\Credentials\PasswordCredentials;
 use Symfony\Component\Security\Http\Authenticator\Passport\Passport;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
+use Symfony\Component\HttpFoundation\Session\FlashBagAwareSessionInterface;
 
 class CustomAuthenticator extends AbstractLoginFormAuthenticator
 {
@@ -53,18 +54,23 @@ class CustomAuthenticator extends AbstractLoginFormAuthenticator
         if ($token !== null) {
             $utilisateur = $token->getUser();
             if ($utilisateur instanceof Utilisateur) {
-                if(!$utilisateur->isVerified()) {
-                    $request->getSession()->invalidate();
-                    $this->tokenStorage->setToken(null);
-                    $request->getSession()->getFlashBag()->add(
-                        "error",
-                        "Cliquez sur le lien de vérification ou bien créez un nouveau mot de passe !"
-                    );
-                    return new RedirectResponse($this->urlGenerator->generate('app_accueil'));
-                } else {
+                // User is verified, so he can login.
+                if($utilisateur->isVerified()) {
+                    // Save he's last login date.
                     $utilisateur->setLastLogin(new \DateTime());
                     $this->entityManager->flush();
                     return new RedirectResponse($this->urlGenerator->generate('app_utilisateur_accueil'));
+                } else {
+                    $session = $request->getSession();
+                    $session->invalidate();
+                    $this->tokenStorage->setToken(null);
+                    if($session instanceof FlashBagAwareSessionInterface) {
+                        $session->getFlashBag()->add(
+                            "error",
+                            "Cliquez sur le lien de vérification ou bien créez un nouveau mot de passe !"
+                        );
+                    }
+                    return new RedirectResponse($this->urlGenerator->generate('app_accueil'));
                 }
             }
         }
