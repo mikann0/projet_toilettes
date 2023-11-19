@@ -17,7 +17,7 @@ class CommentType extends AbstractType
     {
         $builder
             ->add('note',HiddenType::class, [
-                'attr'  =>  ['class' => 'filtrer_note'],
+                'attr'  =>  ['class' => 'filtrer_note', 'id'=>'comment_note'],
             ])
             ->add('enPanne',CheckboxType::class, [
                 'row_attr'  =>  ['class' => 'form-checkbox'],

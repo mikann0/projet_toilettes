@@ -89,7 +89,7 @@ When the DOM (page) is loaded, add event listeners to every radio buttons and to
 document.addEventListener("DOMContentLoaded", function () {
     // div containing the radio buttons
     const clearButton = document.querySelector('#clear-filter');
-    const radioButtons = document.querySelectorAll('#clear-filter > input[type="radio"]');
+    const radioButtons = document.querySelectorAll('.filtrer-note > input[type="radio"]');
     const hiddenInput = document.querySelector('#comment_note');
 
     if (hiddenInput) {
