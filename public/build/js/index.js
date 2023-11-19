@@ -82,53 +82,64 @@ function buttonActive() {
     }
 }
 
+// note by star
+/* 
+When the DOM (page) is loaded, add event listeners to every radio buttons and to the #clear-filter button.
+*/
 document.addEventListener("DOMContentLoaded", function () {
-    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    // div containing the radio buttons
     const clearButton = document.querySelector('#clear-filter');
+    const radioButtons = document.querySelectorAll('#clear-filter > input[type="radio"]');
     const hiddenInput = document.querySelector('#comment_note');
 
-    if(hiddenInput){
-    radioButtons.forEach(button => {
-        if (button.value <= hiddenInput.value){
-        button.nextElementSibling.setAttribute('data-selected', 'true');
-        }
-    });}
-
-    radioButtons.forEach(button => {
-        button.addEventListener("change", function () {
-            radioButtons.forEach(button => {
-                button.nextElementSibling.setAttribute('data-selected', 'false');});
-            const selectedValue = this.value;
-
-            if (hiddenInput) {
-                hiddenInput.value = selectedValue;
+    if (hiddenInput) {
+        radioButtons.forEach(button => {
+            if (button.value <= hiddenInput.value) {
+                button.nextElementSibling.setAttribute('data-selected', 'true');
             }
+        });
+    }
 
-            const items = document.querySelectorAll('.note_filtre');
-            items.forEach(item => {
-                if (item.dataset.note == selectedValue) {
-                    item.style.display = "flex";
-                } else {
-                    item.style.display = "none";
-                }
-            });
-        });
-        // When a click is received, don't send the even to the parent.
-        button.addEventListener("click", function (event) {
-            event.stopPropagation();
-        });
-    });
     if (clearButton) {
         clearButton.addEventListener("click", function () {
-            const items = document.querySelectorAll('.note_filtre');
-            items.forEach(item => {
-                item.style.display = "flex";
+            const all_toillets = document.querySelectorAll('.note_filtre');
+            all_toillets.forEach(toillet_div => {
+                toillet_div.style.display = "flex";
             });
             radioButtons.forEach(button => {
                 button.checked = false;
             });
         });
     }
+
+    radioButtons.forEach(button => {
+        button.addEventListener("change", function () {
+            radioButtons.forEach(_button => {
+                _button.nextElementSibling.setAttribute('data-selected', 'false');
+            });
+            const selectedValue = this.value;
+
+            if (hiddenInput) {
+                hiddenInput.value = selectedValue;
+            }
+
+            const all_toillets = document.querySelectorAll('.note_filtre');
+            // display the toillets div that have the selected grade
+            all_toillets.forEach(toillet_div => {
+                if (toillet_div.dataset.note == selectedValue) {
+                    toillet_div.style.display = "flex";
+                } else {
+                    toillet_div.style.display = "none";
+                }
+            });
+        });
+        // When a click is received on a radio button, 
+        // don't send the event to the parent div that will clear buttons.
+        button.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+    });
+
 
 });
 
