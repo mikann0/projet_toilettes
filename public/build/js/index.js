@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenInput = document.querySelector('#comment_note');
 
     if (hiddenInput) {
+        // select the radio button (display) up to the value of hidden input (value from database).
         radioButtons.forEach(button => {
             if (button.value <= hiddenInput.value) {
                 button.nextElementSibling.setAttribute('data-selected', 'true');
@@ -118,7 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 _button.nextElementSibling.setAttribute('data-selected', 'false');
             });
             const selectedValue = this.value;
-
+            
+            // Put the value of the selected radio button in the hidden input.
+            // The value from the hidden input will be saved in the database 
+            // when sending the form.
             if (hiddenInput) {
                 hiddenInput.value = selectedValue;
             }
